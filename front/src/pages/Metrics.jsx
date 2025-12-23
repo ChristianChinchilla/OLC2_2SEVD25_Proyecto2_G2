@@ -1,0 +1,93 @@
+import { useEffect, useState } from 'react';
+import { useAppContext } from '../context/AppContext';
+import Card from '../components/Card';
+import apiService from '../services/apiService';
+
+export default function Metrics() {
+  const { modelId, metrics, setMetrics, checkMetrics } = useAppContext();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    // Solo intentamos buscar métricas si hay un modelo entrenado (modelId)
+    // y no tenemos las métricas ya cargadas.
+    if (modelId && !metrics) {
+      fetchMetrics();
+    }
+  }, [modelId]);
+
+  const fetchMetrics = async () => {
+    setLoading(true);
+    try {
+      const data = await apiService.getMetrics();
+      setMetrics(data);
+    } catch (err) {
+      console.error('Error al obtener métricas:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const metricsData = [
+    { label: 'Exactitud (Accuracy)', value: metrics?.accuracy, color: '#3498db', icon: '🎯' },
+    { label: 'Precisión (Precision)', value: metrics?.precision, color: '#e74c3c', icon: '🔍' },
+    { label: 'Recall', value: metrics?.recall, color: '#f39c12', icon: '📈' },
+    { label: 'F1-Score', value: metrics?.f1_score, color: '#27ae60', icon: '⚡' },
+  ];
+
+  // Función auxiliar para saber si un valor es válido (no null ni undefined)
+  const isValid = (val) => val !== undefined && val !== null;
+
+  return (
+    <div style={styles.container}>
+      <h1>📊 Evaluación del Modelo</h1>
+      
+      {/* Mensaje informativo si no hay modelo entrenado aún */}
+      {!metrics && (
+        <Card style={{ backgroundColor: '#e8f4fd', borderLeft: '4px solid #3498db' }}>
+          <p>ℹ️ Aún no hay métricas disponibles. Ve a la pestaña <strong>Entrenamiento</strong> para generar un modelo.</p>
+        </Card>
+      )}
+
+      <div style={styles.grid}>
+        {metricsData.map((metric, index) => (
+          <Card key={index} style={{ borderTop: `4px solid ${metric.color}` }}>
+            <div style={styles.metricCard}>
+              <span style={styles.icon}>{metric.icon}</span>
+              <h3 style={styles.metricLabel}>{metric.label}</h3>
+              <p style={{ ...styles.metricValue, color: metric.color }}>
+                {/* AQUI ESTÁ EL CAMBIO: Si hay valor, muestra número. Si no, guion */}
+                {isValid(metric.value) ? Number(metric.value).toFixed(2) + '%' : '-'}
+              </p>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      {/* Solo mostramos el estado de predicción si hay métricas reales */}
+      {metrics && (
+        <Card title="Estado de Predicción">
+          {checkMetrics(metrics) ? (
+            <p style={styles.success}>✅ El modelo cumple con las métricas deseadas. Predicción habilitada.</p>
+          ) : (
+            <p style={styles.warning}>⚠️ El modelo no cumple con las métricas mínimas. Considera ajustar hiperparámetros.</p>
+          )}
+          <p style={styles.info}>
+            <strong>Requisitos mínimos:</strong> Accuracy &gt; 75%, Precision &gt; 70%, Recall &gt; 70%, F1-Score &gt; 70%
+          </p>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+const styles = {
+  container: { padding: '2rem', maxWidth: '1000px', margin: '0 auto' },
+  grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '2rem' },
+  metricCard: { textAlign: 'center' },
+  icon: { fontSize: '2.5rem' },
+  metricLabel: { fontSize: '1rem', margin: '0.5rem 0', color: '#34495e' },
+  metricValue: { fontSize: '2rem', fontWeight: 'bold', margin: '0.5rem 0' },
+  success: { color: '#27ae60', fontWeight: 'bold' },
+  warning: { color: '#f39c12', fontWeight: 'bold' },
+  info: { marginTop: '1rem', fontSize: '0.9rem', color: '#7f8c8d' },
+};
