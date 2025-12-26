@@ -7,6 +7,8 @@ import Train from './pages/Train';
 import Metrics from './pages/Metrics';
 import Tune from './pages/Tune';
 import Predict from './pages/Predict';
+import Insights from './pages/Insights';
+import ExportReports from './pages/ExportReports';
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
               <Route path="/metrics" element={<Metrics />} />
               <Route path="/tune" element={<Tune />} />
               <Route path="/predict" element={<Predict />} />
+              <Route path="/insights" element={<Insights />} />
+              <Route path="/export-reports" element={<ExportReports />} />
             </Routes>
           </main>
         </div>

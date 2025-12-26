@@ -12,6 +12,8 @@ export default function Navbar() {
     { path: '/metrics', label: 'Evaluación', enabled: true },
     { path: '/tune', label: 'Ajuste', enabled: true },
     { path: '/predict', label: 'Predicción', enabled: true },
+    { path: '/insights', label: 'Interpretación', enabled: true },
+    { path: '/export-reports', label: 'Exportar', enabled: true },
   ];
 
   return (
