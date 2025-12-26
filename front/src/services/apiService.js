@@ -1,0 +1,157 @@
+import { getApiUrl, API_ENDPOINTS } from '../config';
+
+/**
+ * Servicio centralizado para todas las llamadas al backend
+ */
+const apiService = {
+  /**
+   * Verificar que el backend esté disponible
+   */
+  async checkHealth() {
+    try {
+      const response = await fetch(getApiUrl(API_ENDPOINTS.ROOT));
+      if (!response.ok) throw new Error('Backend no disponible');
+      return await response.json();
+    } catch (error) {
+      console.error('Error al conectar con el backend:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Subir archivo CSV al backend
+   * @param {File} file - Archivo CSV a subir
+   * @returns {Promise<Object>} Respuesta con estado y datos del dataset
+   */
+  async uploadCSV(file) {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch(getApiUrl(API_ENDPOINTS.UPLOAD_CSV), {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Error al subir archivo');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error en uploadCSV:', error);
+      throw error;
+    }
+  },
+
+   /**
+   * Ejecutar limpieza de datos en el backend
+   */
+  async cleanData() {
+    try {
+      // Nota: Es POST pero sin body, porque el backend ya tiene los datos en memoria
+      const response = await fetch(getApiUrl(API_ENDPOINTS.CLEAN_DATA), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Error al limpiar datos');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error en cleanData:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Entrenar el modelo con hiperparámetros opcionales
+   * @param {Object} config - Configuración del entrenamiento
+   * @param {number} config.n_estimators - Número de árboles (default: 100)
+   * @param {number} config.max_depth - Profundidad máxima (default: null)
+   * @param {number} config.min_samples_leaf - Mínimo de muestras por hoja (default: 1)
+   * @returns {Promise<Object>} Métricas del modelo entrenado
+   */
+  async trainModel(config = {}) {
+    try {
+      const defaultConfig = {
+        n_estimators: 100,
+        max_depth: null,
+        min_samples_leaf: 1,
+      };
+
+      const requestBody = { ...defaultConfig, ...config };
+
+      const response = await fetch(getApiUrl(API_ENDPOINTS.TRAIN_MODEL), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Error al entrenar modelo');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error en trainModel:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Obtener métricas actuales del modelo
+   * @returns {Promise<Object>} Métricas del modelo
+   */
+  async getMetrics() {
+    try {
+      const response = await fetch(getApiUrl(API_ENDPOINTS.GET_METRICS));
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Error al obtener métricas');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error en getMetrics:', error);
+      throw error;
+    }
+  },
+
+  /**
+   * Realizar predicción individual para un estudiante
+   * @param {Object} studentData - Datos del estudiante
+   * @returns {Promise<Object>} Resultado de la predicción
+   */
+  async predictStudent(studentData) {
+    try {
+      const response = await fetch(getApiUrl(API_ENDPOINTS.PREDICT), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(studentData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Error al realizar predicción');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error en predictStudent:', error);
+      throw error;
+    }
+  },
+};
+
+export default apiService;
