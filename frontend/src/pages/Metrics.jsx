@@ -63,16 +63,17 @@ export default function Metrics() {
         ))}
       </div>
 
-      {/* Solo mostramos el estado de predicción si hay métricas reales */}
+      {/* Solo mostramos el estado de validación si hay métricas reales */}
       {metrics && (
-        <Card title="Estado de Predicción">
-          {checkMetrics(metrics) ? (
-            <p style={styles.success}>✅ El modelo cumple con las métricas deseadas. Predicción habilitada.</p>
-          ) : (
-            <p style={styles.warning}>⚠️ El modelo no cumple con las métricas mínimas. Considera ajustar hiperparámetros.</p>
-          )}
+        <Card title="Validación del Modelo de Clustering">
+          <ul style={{ marginBottom: '1rem', marginTop: 0 }}>
+            <li><strong>Inercia:</strong> Que el valor sea lo mas bajo posible (clusters más compactos).</li>
+            <li><strong>Silhouette:</strong> Que el resultado sea lo mas cercano a 1, esto indica que los clusters están estan bien separados.</li>
+            <li><strong>Calinski-Harabasz:</strong> Que el valor sea lo mas alto posible (buena separación entre clusters).</li>
+            <li><strong>Davies-Bouldin:</strong> Que el valor sea lo mas bajo posible (clusters bien definidos).</li>
+          </ul>
           <p style={styles.info}>
-            <strong>Requisitos mínimos:</strong> Accuracy &gt; 75%, Precision &gt; 70%, Recall &gt; 70%, F1-Score &gt; 70%
+            <strong>Consejo:</strong> Ajusta el número de clusters y vuelve a entrenar para mejorar estas métricas. Compara diferentes configuraciones para encontrar la mejor segmentación.
           </p>
         </Card>
       )}

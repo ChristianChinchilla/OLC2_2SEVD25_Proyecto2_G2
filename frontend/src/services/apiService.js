@@ -131,26 +131,10 @@ const apiService = {
    * @param {Object} studentData - Datos del estudiante
    * @returns {Promise<Object>} Resultado de la predicción
    */
-  async predictStudent(studentData) {
-    try {
-      const response = await fetch(getApiUrl(API_ENDPOINTS.PREDICT), {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(studentData),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Error al realizar predicción');
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error('Error en predictStudent:', error);
-      throw error;
-    }
+  async getSegmentsReport() {
+    const response = await fetch('/segments-report');
+    if (!response.ok) throw new Error('Error al obtener segmentos');
+    return await response.json();
   },
 };
 
