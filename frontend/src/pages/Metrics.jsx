@@ -28,10 +28,10 @@ export default function Metrics() {
   };
 
   const metricsData = [
-    { label: 'Exactitud (Accuracy)', value: metrics?.accuracy, color: '#3498db', icon: '🎯' },
-    { label: 'Precisión (Precision)', value: metrics?.precision, color: '#e74c3c', icon: '🔍' },
-    { label: 'Recall', value: metrics?.recall, color: '#f39c12', icon: '📈' },
-    { label: 'F1-Score', value: metrics?.f1_score, color: '#27ae60', icon: '⚡' },
+    { label: 'Inercia (Inertia)', value: metrics?.inertia, color: '#3498db', icon: '🌀' },
+    { label: 'Silhouette', value: metrics?.silhouette, color: '#e67e22', icon: '📏' },
+    { label: 'Calinski-Harabasz', value: metrics?.calinski_harabasz, color: '#9b59b6', icon: '📊' },
+    { label: 'Davies-Bouldin', value: metrics?.davies_bouldin, color: '#e74c3c', icon: '📉' },
   ];
 
   // Función auxiliar para saber si un valor es válido (no null ni undefined)
@@ -39,7 +39,7 @@ export default function Metrics() {
 
   return (
     <div style={styles.container}>
-      <h1>📊 Evaluación del Modelo</h1>
+      <h1>Evaluación de Rendimiento</h1>
       
       {/* Mensaje informativo si no hay modelo entrenado aún */}
       {!metrics && (
@@ -56,7 +56,7 @@ export default function Metrics() {
               <h3 style={styles.metricLabel}>{metric.label}</h3>
               <p style={{ ...styles.metricValue, color: metric.color }}>
                 {/* AQUI ESTÁ EL CAMBIO: Si hay valor, muestra número. Si no, guion */}
-                {isValid(metric.value) ? Number(metric.value).toFixed(2) + '%' : '-'}
+                {isValid(metric.value) ? Number(metric.value).toFixed(2) : '-'}
               </p>
             </div>
           </Card>
