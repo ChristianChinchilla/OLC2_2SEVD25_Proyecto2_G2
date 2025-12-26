@@ -1,0 +1,52 @@
+{
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "nombre": "Entusiastas de la Tecnología",
+      "cantidad_clientes": 120,
+      "caracteristicas_clave": ["Compra frecuente de gadgets", "Altas calificaciones en productos nuevos", "Sensibles al precio"],
+      "resumen_reseñas": "Predominan comentarios positivos sobre innovación y rendimiento. Mencionan la duración de la batería como un punto a mejorar.",
+      "metricas_promedio": {
+        "gasto_promedio": 250.75,
+        "frecuencia_compra": 8.5,
+        "satisfaccion": 4.8
+      }
+    },
+    {
+      "cluster_id": 2,
+      "nombre": "Compradores Ocasionales",
+      "cantidad_clientes": 350,
+      "caracteristicas_clave": ["Compras esporádicas", "Buscan ofertas", "Menor interacción con la marca"],
+      "resumen_reseñas": "Reseñas generalmente neutras o cortas. Valoran la relación calidad-precio y la simplicidad del producto.",
+      "metricas_promedio": {
+        "gasto_promedio": 85.50,
+        "frecuencia_compra": 2.1,
+        "satisfaccion": 4.2
+      }
+    },
+    {
+      "cluster_id": 3,
+      "nombre": "Usuarios Exigentes",
+      "cantidad_clientes": 75,
+      "caracteristicas_clave": ["Buscan características premium", "Leales a la marca si están satisfechos", "Dejan reseñas detalladas"],
+      "resumen_reseñas": "Críticas constructivas y detalladas. Exigen alta calidad y un excelente servicio al cliente. Dispuestos a pagar más por durabilidad.",
+      "metricas_promedio": {
+        "gasto_promedio": 450.00,
+        "frecuencia_compra": 4.5,
+        "satisfaccion": 4.5
+      }
+    }
+  ],
+  "clientes_segmentados": [
+    { "cliente_id": "CUST001", "nombre": "Ana Torres", "cluster_id": 1 },
+    { "cliente_id": "CUST002", "nombre": "Luis Morales", "cluster_id": 2 },
+    { "cliente_id": "CUST003", "nombre": "Carla Solis", "cluster_id": 3 },
+    { "cliente_id": "CUST004", "nombre": "David Reyes", "cluster_id": 1 },
+    { "cliente_id": "CUST005", "nombre": "Elena Prado", "cluster_id": 2 },
+    { "cliente_id": "CUST006", "nombre": "Fernando Gil", "cluster_id": 2 },
+    { "cliente_id": "CUST007", "nombre": "Sofia Mendez", "cluster_id": 1 },
+    { "cliente_id": "CUST008", "nombre": "Jorge Ruiz", "cluster_id": 3 },
+    { "cliente_id": "CUST009", "nombre": "Lucia Vega", "cluster_id": 2 },
+    { "cliente_id": "CUST010", "nombre": "Mario Diaz", "cluster_id": 2 }
+  ]
+}
