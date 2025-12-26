@@ -97,7 +97,7 @@ export default function Predict() {
         </Card>
       )}
 
-      <Card title="Datos del Estudiante">
+      <Card title="Datos del Cliente">
         <form onSubmit={handlePredict} style={styles.form}>
           <div style={styles.grid}>
             {fields.map((field) => (

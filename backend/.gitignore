@@ -1,0 +1,6 @@
+# ...existing code...
+*.sln
+*.sw?
+
+# Ignorar entorno virtual de Python
+/venv/

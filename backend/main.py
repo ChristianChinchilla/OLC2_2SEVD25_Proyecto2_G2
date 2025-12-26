@@ -8,6 +8,10 @@ import io
 
 app = FastAPI(title="InsightCluster API", description="API de Segmentación de Clientes")
 
+@app.on_event("startup")
+async def startup_event():
+    print("Backend corriendo limpiamente")
+
 #configurar CORS 
 app.add_middleware(
     CORSMiddleware,
@@ -29,7 +33,7 @@ def home():
     return {"message": "InsightCluster Backend Running"}
 
 #carga masiva
-@app.post("/upload-dataset")
+@app.post("/upload-csv")
 async def upload_dataset(file: UploadFile = File(...)):
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="Debe ser un archivo CSV.")
@@ -43,6 +47,22 @@ async def upload_dataset(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail=result["message"])
     
     return result
+
+# Limpieza de datos endpoint
+@app.post("/clean-data")
+def clean_data():
+    try:
+        processed = cluster_engine.preprocess_data()
+        # Puedes personalizar estos valores según lo que quieras mostrar
+        return {
+            "rows_processed": processed.shape[0] if hasattr(processed, 'shape') else len(processed),
+            "missing_values_fixed": "Automático",  # Puedes mejorar esto si tienes el dato real
+            "normalizations": "Numéricos y categóricos normalizados",
+            "message": "Limpieza y normalización completadas."
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
 
 #configuración y entrenamiento
 @app.post("/train-model")

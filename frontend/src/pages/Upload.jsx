@@ -62,7 +62,7 @@ export default function Upload() {
       });
 
       setIsUploaded(true); // Habilita siguiente paso
-      setStatusMessage('✅ Archivo cargado. Ahora debes limpiarlo.');
+      setStatusMessage('Archivo cargado. Proceda a limpiarlo.');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -83,7 +83,7 @@ export default function Upload() {
       setIsCleaned(true); // Actualiza contexto global
       
       setIsCleanedLocal(true); // Habilita siguiente paso
-      setStatusMessage('✅ Datos limpios. Listos para entrenamiento.');
+      setStatusMessage('Datos limpios. Listos para entrenamiento.');
     } catch (err) {
       setError(err.message);
     } finally {

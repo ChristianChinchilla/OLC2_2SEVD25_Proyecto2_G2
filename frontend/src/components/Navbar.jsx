@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav style={styles.nav}>
       <div style={styles.brand}>
-        <h2>🎓 StudentGuard</h2>
+        <h2>InsightCluster</h2>
       </div>
       <div style={styles.links}>
         {navItems.map((item) => (
