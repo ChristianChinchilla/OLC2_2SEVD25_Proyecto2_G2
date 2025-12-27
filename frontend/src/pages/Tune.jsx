@@ -7,10 +7,7 @@ export default function Tune() {
   const { isCleaned, setModelId, setMetrics, checkMetrics } = useAppContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  //Algoritmo seleccionable
   const [algorithmVariant, setAlgorithmVariant] = useState("K-Means");
-
-  // Hiperparámetros para clustering
   const [nClusters, setNClusters] = useState(3);
   const [maxIter, setMaxIter] = useState(300);
 
@@ -24,6 +21,7 @@ export default function Tune() {
     setError(null);
 
     try {
+      // Usar los valores seleccionados por el usuario
       const config = {
         n_clusters: nClusters,
         max_iter: maxIter,
@@ -36,7 +34,7 @@ export default function Tune() {
       setMetrics(data.metrics);
       checkMetrics(data.metrics);
 
-      alert('✅ Modelo reentrenado exitosamente. Ve a la pestaña "Evaluación" para ver los cambios.');
+      alert(`✅ Modelo reentrenado exitosamente con n_clusters=${nClusters}. Ve a la pestaña "Evaluación" para ver los cambios.`);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -56,7 +54,7 @@ export default function Tune() {
 
       <Card title="Configuración de Clustering">
         <div style={styles.sliderContainer}>
-          {/* Selección de algoritmo, si es que en un futuro se agregan mas algoritmos */}
+          {/* Selección de algoritmo */}
           <label style={styles.label}>
             Algoritmo:
             <select
@@ -65,11 +63,10 @@ export default function Tune() {
               style={{ ...styles.slider, padding: '0.5rem', marginTop: '0.5rem' }}
             >
               <option value="K-Means">K-Means</option>
-              {/* Puedes agregar más algoritmos aquí en el futuro */}
             </select>
           </label>
 
-          {/* SLIDER 1: Número de clusters */}
+          {/* SLIDER: Número de clusters */}
           <label style={styles.label}>
             Número de clusters (n_clusters): <strong>{nClusters}</strong>
             <input
@@ -82,7 +79,7 @@ export default function Tune() {
             />
           </label>
 
-          {/* SLIDER 2: Iteraciones máximas */}
+          {/* SLIDER: Iteraciones máximas */}
           <label style={styles.label}>
             Iteraciones máximas (max_iter): <strong>{maxIter}</strong>
             <input

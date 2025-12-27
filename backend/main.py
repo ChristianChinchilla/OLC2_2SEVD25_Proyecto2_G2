@@ -107,3 +107,16 @@ def export_data():
         media_type="text/csv",
         headers={"Content-Disposition": "attachment; filename=insight_cluster_results.csv"}
     )
+
+@app.get("/find-best-k")
+def find_best_k(min_k: int = 2, max_k: int = 8):
+    """
+    Endpoint para sugerir el mejor número de clusters usando el coeficiente de Silhouette.
+    """
+    try:
+        result = cluster_engine.find_best_k(min_k=min_k, max_k=max_k)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

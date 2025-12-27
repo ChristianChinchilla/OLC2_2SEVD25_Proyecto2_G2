@@ -68,13 +68,10 @@ export default function Metrics() {
         <Card title="Validación del Modelo de Clustering">
           <ul style={{ marginBottom: '1rem', marginTop: 0 }}>
             <li><strong>Inercia:</strong> Que el valor sea lo mas bajo posible (clusters más compactos).</li>
-            <li><strong>Silhouette:</strong> Que el resultado sea lo mas cercano a 1, esto indica que los clusters están estan bien separados.</li>
+            <li><strong>Silhouette:</strong> Que el resultado sea lo mas cercano a 1 (Bueno: mayor que 0.5) (Aceptable: 0.25 - 0.5)</li>
             <li><strong>Calinski-Harabasz:</strong> Que el valor sea lo mas alto posible (buena separación entre clusters).</li>
-            <li><strong>Davies-Bouldin:</strong> Que el valor sea lo mas bajo posible (clusters bien definidos).</li>
+            <li><strong>Davies-Bouldin:</strong> Que el valor sea lo mas bajo posible (Bueno: menor que 1) (Aceptable: 1 - 2).</li>
           </ul>
-          <p style={styles.info}>
-            <strong>Consejo:</strong> Ajusta el número de clusters y vuelve a entrenar para mejorar estas métricas. Compara diferentes configuraciones para encontrar la mejor segmentación.
-          </p>
         </Card>
       )}
     </div>

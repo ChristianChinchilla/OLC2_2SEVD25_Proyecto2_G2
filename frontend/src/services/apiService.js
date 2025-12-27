@@ -136,6 +136,20 @@ const apiService = {
     if (!response.ok) throw new Error('Error al obtener segmentos');
     return await response.json();
   },
+
+  /**
+   * Sugerir el mejor número de clusters usando Silhouette
+   * @param {number} min_k - Mínimo número de clusters a probar
+   * @param {number} max_k - Máximo número de clusters a probar
+   * @returns {Promise<Object>} { best_k, best_score, silhouette_scores }
+   */
+  async findBestK(min_k = 2, max_k = 10) {
+    const url = getApiUrl(API_ENDPOINTS.FIND_BEST_K || '/find-best-k');
+    const params = `?min_k=${min_k}&max_k=${max_k}`;
+    const response = await fetch(url + params);
+    if (!response.ok) throw new Error('Error al buscar el mejor número de clusters');
+    return await response.json();
+  },
 };
 
 export default apiService;

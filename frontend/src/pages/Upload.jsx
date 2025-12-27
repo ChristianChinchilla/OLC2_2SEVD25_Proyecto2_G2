@@ -95,7 +95,7 @@ export default function Upload() {
   const handleTrain = async () => {
     setLoading(true);
     setError(null);
-    setStatusMessage('Entrenando modelo inicial (Random Forest)...');
+    setStatusMessage('Entrenando modelo inicial');
 
     try {
       const data = await apiService.trainModel(); // Sin config = usa defaults
@@ -116,7 +116,7 @@ export default function Upload() {
 
   return (
     <div style={styles.container}>
-      <h1>⚙️ Gestión del Modelo</h1>
+      <h1>Gestión del Modelo</h1>
       
       <div style={styles.grid}>
         

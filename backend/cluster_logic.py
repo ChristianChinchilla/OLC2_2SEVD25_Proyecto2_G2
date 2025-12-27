@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, RobustScaler
 from sklearn.impute import SimpleImputer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.compose import ColumnTransformer
@@ -21,10 +21,10 @@ class InsightClusterModel:
         
         #definición de columnas
         self.cols_numeric = [
-            'frecuencia_compra', 'monto_total_gastado', 'monto_promedio_compra',
-            'dias_desde_ultima_compra', 'antiguedad_cliente_meses', 'numero_productos_distintos',
-            'longitud_reseña' 
+            'frecuencia_compra', 'monto_total_gastado', 'monto_promedio_compra', 'dias_desde_ultima_compra',
+            'antiguedad_cliente_meses', 'numero_productos_distintos'
         ]
+
         self.cols_categorical = ['canal_principal', 'producto_categoria']
         self.cols_text = 'texto_reseña' 
         
@@ -75,8 +75,8 @@ class InsightClusterModel:
         
         #numéricos: imputación y escalado
         numeric_transformer = Pipeline(steps=[
-            ('imputer', SimpleImputer(strategy='mean')),
-            ('scaler', StandardScaler())
+            ('imputer', SimpleImputer(strategy='median')),
+            ('scaler', RobustScaler())
         ])
 
         #imputación y  OneHotEncoding
@@ -86,15 +86,15 @@ class InsightClusterModel:
         ])
 
         #vectorizer
-        text_transformer = TfidfVectorizer(max_features=50, stop_words='english')
+        text_transformer = TfidfVectorizer(max_features=30, stop_words='english')
 
         #unir todo
         preprocessor = ColumnTransformer(
             transformers=[
                 ('num', numeric_transformer, [c for c in self.cols_numeric if c in df.columns]),
-                ('cat', categorical_transformer, [c for c in self.cols_categorical if c in df.columns]),
-                ('txt', text_transformer, self.cols_text)
+                ('cat', categorical_transformer, [c for c in self.cols_categorical if c in df.columns])
             ])
+
 
         #aplicar transformación
         self.processed_data = preprocessor.fit_transform(df)
@@ -109,7 +109,7 @@ class InsightClusterModel:
         
         X = self.preprocess_data()
         #configurar y entrenar 
-        kmeans = KMeans(n_clusters=n_clusters, max_iter=max_iter, random_state=42, n_init=10)
+        kmeans = KMeans(n_clusters=n_clusters, max_iter=max_iter, random_state=42, n_init=20)
         self.labels = kmeans.fit_predict(X)
         self.model = kmeans
         
@@ -160,6 +160,34 @@ class InsightClusterModel:
             summary.append(desc)
             
         return summary
+    
+    def find_best_k(self, min_k=2, max_k=10):
+        """
+        Busca el mejor número de clusters (k) usando el coeficiente de Silhouette.
+        Retorna un diccionario con el mejor k y los valores de Silhouette para cada k.
+        """
+        if self.raw_dataset is None:
+            raise ValueError("Carga datos primero.")
+        X = self.preprocess_data()
+        best_k = min_k
+        best_score = -1
+        silhouette_scores = {}
+        for k in range(min_k, min(max_k + 1, len(X))):
+            try:
+                kmeans = KMeans(n_clusters=k, max_iter=300, random_state=42, n_init=10)
+                labels = kmeans.fit_predict(X)
+                score = silhouette_score(X, labels)
+                silhouette_scores[k] = round(score, 4)
+                if score > best_score:
+                    best_score = score
+                    best_k = k
+            except Exception as e:
+                silhouette_scores[k] = None  # En caso de error (por ejemplo, clusters vacíos)
+        return {
+            "best_k": best_k,
+            "best_score": round(best_score, 4),
+            "silhouette_scores": silhouette_scores
+        }
 
     def get_csv_export(self):
         """Genera el CSV final para descargar (PDF Pag 5 y 6)"""
