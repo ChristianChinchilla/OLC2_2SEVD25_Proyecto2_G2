@@ -10,151 +10,189 @@ export default function Insights() {
   }, []);
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ color: '#2c3e50', marginBottom: '2rem', textAlign: 'center' }}>Interpretación y Perfilado de Segmentos</h1>
+    <div style={styles.container}>
 
-      {/* Tabla Resumen */}
-      <div style={styles.section}>
-        <h2 style={styles.sectionTitle}>Resumen de Clusters</h2>
-        <div style={styles.tableContainer}>
-          <table style={styles.table}>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Nombre del Segmento</th>
-                <th>Clientes</th>
-                <th>Gasto Promedio</th>
-                <th>Satisfacción</th>
-              </tr>
-            </thead>
-            <tbody>
-              {clusters.map(c => (
-                <tr key={c.cluster_id}>
-                  <td>{c.cluster_id}</td>
-                  <td>{c.nombre}</td>
-                  <td>{c.cantidad_clientes}</td>
-                  <td>${c.metricas_promedio.gasto_promedio}</td>
-                  <td>{c.metricas_promedio.satisfaccion}/5</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {/* ================== HERO ================== */}
+      <div style={styles.hero}>
+        <h1 style={styles.title}>
+          Interpretación del Modelo de Segmentación
+        </h1>
+        <p style={styles.text}>
+          Esta vista te guía paso a paso para comprender cómo el sistema analiza los datos,
+          genera segmentos y cómo interpretar correctamente los resultados obtenidos.
+        </p>
+      </div>
+
+      {/* ================== PROPÓSITO ================== */}
+      <div style={styles.card}>
+        <h2 style={styles.subtitle}>
+          ¿Para qué existe esta herramienta?
+        </h2>
+        <p style={styles.text}>
+          El objetivo del sistema es transformar datos complejos en conocimiento útil.
+          A través de técnicas de <strong>Machine Learning no supervisado</strong>, se identifican
+          patrones de comportamiento en clientes sin necesidad de etiquetas previas.
+        </p>
+      </div>
+
+      {/* ================== FLUJO K-MEANS ================== */}
+      <div style={styles.card}>
+        <h2 style={styles.subtitle}>
+          ¿Cómo trabaja el modelo internamente?
+        </h2>
+
+        <div style={styles.flow}>
+          <div style={styles.node}>CSV</div>
+          <span style={styles.arrow}>→</span>
+          <div style={styles.node}>Limpieza</div>
+          <span style={styles.arrow}>→</span>
+          <div style={styles.node}>Normalización</div>
+          <span style={styles.arrow}>→</span>
+          <div style={styles.node}>K-Means</div>
+          <span style={styles.arrow}>→</span>
+          <div style={styles.node}>Clusters</div>
+        </div>
+
+        <p style={styles.note}>
+          Este flujo representa conceptualmente cómo los datos avanzan dentro del sistema
+          hasta convertirse en segmentos interpretables.
+        </p>
+      </div>
+
+      {/* ================== MÉTRICAS ================== */}
+      <div style={styles.card}>
+        <h2 style={styles.subtitle}>
+          ¿Cómo se evalúa el modelo?
+        </h2>
+
+        <div style={styles.metricsGrid}>
+          <Metric
+            title="Inercia"
+            text="Mide qué tan compactos son los clusters. Se utiliza únicamente para comparar configuraciones con diferente número de segmentos."
+          />
+          <Metric
+            title="Silhouette"
+            text="Evalúa qué tan bien separados están los clusters. Valores más altos indican una mejor estructura del agrupamiento."
+          />
+          <Metric
+            title="Calinski-Harabasz"
+            text="Relaciona la separación entre clusters con la cohesión interna. Valores altos indican un buen equilibrio."
+          />
+          <Metric
+            title="Davies-Bouldin"
+            text="Mide la similitud entre clusters. Valores bajos indican que los segmentos están mejor diferenciados."
+          />
         </div>
       </div>
 
-      {/* Gráfica */}
-      <div style={styles.section}>
-        <SimpleBarChart 
-          data={clusters.map(c => ({ label: c.nombre, value: c.cantidad_clientes }))} 
+      {/* ================== VISUALIZACIÓN ================== */}
+      <div style={styles.card}>
+        <h2 style={styles.subtitle}>
+          Distribución de Clientes por Segmento
+        </h2>
+
+        <p style={styles.text}>
+          Esta gráfica muestra cómo el modelo distribuyó a los clientes en cada segmento.
+          Permite detectar clusters dominantes, desbalanceados o poco representativos.
+        </p>
+
+        <SimpleBarChart
+          data={clusters.map(c => ({
+            label: c.nombre,
+            value: c.cantidad_clientes
+          }))}
         />
+
+        <p style={styles.note}>
+          Un buen agrupamiento no necesariamente tiene segmentos del mismo tamaño,
+          sino segmentos con significado interpretativo.
+        </p>
       </div>
 
-      {/* Tarjetas de Perfil */}
-      <div style={styles.cardsGrid}>
-        {clusters.map(c => (
-          <div key={c.cluster_id} style={styles.card}>
-            <div style={styles.cardHeader}>
-              <h3 style={{ margin: 0, color: 'white' }}>{c.nombre}</h3>
-            </div>
-            <div style={styles.cardBody}>
-              <h4 style={styles.cardSubtitle}>Características Clave</h4>
-              <ul style={styles.list}>
-                {c.caracteristicas_clave.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-              
-              <h4 style={styles.cardSubtitle}>Análisis de Reseñas</h4>
-              <p style={styles.text}>{c.resumen_reseñas}</p>
-              
-              <div style={styles.metrics}>
-                <div style={styles.metric}>
-                  <span>Frecuencia Compra:</span>
-                  <strong>{c.metricas_promedio.frecuencia_compra}x/mes</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
 
+/* ================== COMPONENTE MÉTRICA ================== */
+function Metric({ title, text }) {
+  return (
+    <div style={styles.metricBox}>
+      <h4 style={styles.metricTitle}>{title}</h4>
+      <p style={styles.metricText}>{text}</p>
+    </div>
+  );
+}
+
+/* ================== ESTILOS ================== */
 const styles = {
-  section: {
-    marginBottom: '3rem'
-  },
-  sectionTitle: {
-    color: '#34495e',
-    marginBottom: '1rem',
-    borderBottom: '2px solid #ecf0f1',
-    paddingBottom: '0.5rem'
-  },
-  tableContainer: {
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-    overflow: 'hidden'
-  },
-  table: {
-    width: '100%',
-    borderCollapse: 'collapse',
-    textAlign: 'left'
-  },
-  cardsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '2rem'
-  },
-  card: {
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-    transition: 'transform 0.2s',
-    display: 'flex',
-    flexDirection: 'column'
-  },
-  cardHeader: {
-    backgroundColor: '#2c3e50',
-    padding: '1rem',
-    textAlign: 'center'
-  },
-  cardBody: {
-    padding: '1.5rem',
-    flex: 1
-  },
-  cardSubtitle: {
-    color: '#7f8c8d',
-    marginBottom: '0.5rem',
-    marginTop: '1rem',
-    fontSize: '0.9rem',
-    textTransform: 'uppercase',
-    letterSpacing: '1px'
-  },
-  list: {
-    paddingLeft: '1.2rem',
-    margin: 0,
+  container: {
+    padding: '2rem',
+    maxWidth: '1200px',
+    margin: '0 auto',
     color: '#2c3e50'
   },
+  hero: {
+    textAlign: 'center',
+    marginBottom: '3rem'
+  },
+  title: {
+    color: '#2c3e50',
+    marginBottom: '1rem'
+  },
+  subtitle: {
+    color: '#2c3e50',
+    marginBottom: '1rem'
+  },
   text: {
-    color: '#34495e',
-    lineHeight: '1.5',
-    margin: 0
+    color: '#2c3e50',
+    lineHeight: '1.7'
   },
-  metrics: {
-    marginTop: '1.5rem',
-    paddingTop: '1rem',
-    borderTop: '1px solid #ecf0f1',
+  card: {
+    backgroundColor: '#ffffff',
+    padding: '2rem',
+    borderRadius: '10px',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.08)',
+    marginBottom: '2.5rem'
+  },
+  flow: {
     display: 'flex',
-    justifyContent: 'space-between'
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem',
+    margin: '1.5rem 0'
   },
-  metric: {
+  node: {
+    padding: '0.7rem 1.2rem',
+    backgroundColor: '#2c3e50',
+    color: '#ffffff',
+    borderRadius: '6px',
+    fontSize: '0.9rem'
+  },
+  arrow: {
+    color: '#2c3e50',
+    fontSize: '1.2rem'
+  },
+  note: {
     fontSize: '0.9rem',
-    color: '#7f8c8d',
-    display: 'flex',
-    flexDirection: 'column'
+    color: '#555',
+    marginTop: '1rem'
+  },
+  metricsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '1.5rem'
+  },
+  metricBox: {
+    backgroundColor: '#f8f9fa',
+    padding: '1.2rem',
+    borderRadius: '6px'
+  },
+  metricTitle: {
+    color: '#2c3e50',
+    marginBottom: '0.5rem'
+  },
+  metricText: {
+    color: '#2c3e50',
+    lineHeight: '1.6'
   }
 };
-

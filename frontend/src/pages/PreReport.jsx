@@ -9,28 +9,28 @@ export default function PreReporte() {
   const [error, setError] = useState(null);
   const [segments, setSegments] = useState([]);
 
-  useEffect(() => {
-    if (modelId) {
-      fetchSegments();
-    }
-  }, [modelId]);
+  // useEffect(() => {
+  //   if (modelId) {
+  //     fetchSegments();
+  //   }
+  // }, [modelId]);
 
-  const fetchSegments = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const data = await apiService.getSegmentsReport();
-      setSegments(data);
-    } catch (err) {
-      setError('No se pudo obtener el reporte de segmentos.');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const fetchSegments = async () => {
+  //   setLoading(true);
+  //   setError(null);
+  //   try {
+  //     const data = await apiService.getSegmentsReport();
+  //     setSegments(data);
+  //   } catch (err) {
+  //     setError('No se pudo obtener el reporte de segmentos.');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <div style={styles.container}>
-      <h1>Reporte Preliminar de Segmentos</h1>
+      <h1>Visualización Preeliminar para los Reportes</h1>
 
       {!modelId && (
         <Card style={{ backgroundColor: '#fff3cd', borderLeft: '4px solid #f39c12' }}>
@@ -87,16 +87,7 @@ export default function PreReporte() {
         </>
       )}
 
-      {!loading && modelId && segments.length === 0 && (
-        <Card>
-          <p>
-            No hay segmentos para mostrar. Asegúrate de haber entrenado el modelo
-            correctamente.
-          </p>
-        </Card>
-      )}
-
-      {/* ===== GRAFICAS PERSISTENTES ===== */}
+      {/* ===== GRAFICAS ===== */}
       {modelId && (
         <>
           <h2 style={{ ...styles.sectionTitle, color: "#000000ff" }}>Visualización de Clusters</h2>
@@ -133,8 +124,8 @@ const styles = {
   },
   grid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '1.5rem',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
+    gap: '2rem',
     marginTop: '1.5rem'
   },
   segmentList: {
@@ -152,7 +143,8 @@ const styles = {
   },
   img: {
     width: '100%',
-    maxHeight: '280px',
+    minHeight: '350px', // se aumenta la altura mínima
+    maxHeight: '500px', // se aumenta la altura máxima
     objectFit: 'contain'
   }
 };

@@ -8,10 +8,10 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   const navItems = [
+    { path: '/insights', label: 'Interpretación', enabled: true },
     { path: '/upload', label: 'Carga Masiva', enabled: true },
     { path: '/metrics', label: 'Evaluación', enabled: true },
     { path: '/tune', label: 'Ajuste', enabled: true },
-    { path: '/insights', label: 'Interpretación', enabled: true },
     { path: '/pre-report', label: 'Reporte Pre', enabled: true },
     { path: '/export-reports', label: 'Exportar', enabled: true },
   ];
