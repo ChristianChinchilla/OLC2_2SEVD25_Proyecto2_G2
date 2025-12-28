@@ -1,0 +1,1001 @@
+cliente_id,frecuencia_compra,monto_total_gastado,monto_promedio_compra,dias_desde_ultima_compra,antiguedad_cliente_meses,canal_principal,numero_productos_distintos,reseña_id,texto_reseña,fecha_reseña,producto_categoria,longitud_reseña
+1,24,2786.54,127.14,95,14,tienda_fisica,11,1001,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-07,Electrónica,9
+2,2,346.48,124.95,65,4,web,9,1002,El producto llegó defectuoso.,2025-04-12,Ropa,4
+3,8,4519.63,153.53,112,1,tienda_fisica,13,1003,El producto llegó defectuoso.,2025-03-23,Ropa,4
+4,9,1597.02,479.46,44,14,tienda_fisica,2,1004,Entrega rápida y buen empaque.,2025-07-14,Hogar,5
+5,20,2681.98,40.86,59,69,web,2,1005,Entrega rápida y buen empaque.,2025-07-13,Retail,5
+6,27,6304.97,445.02,47,25,web,12,1006,Relación calidad-precio aceptable.,2025-02-05,Ropa,3
+7,3,8560.41,435.91,49,36,web,8,1007,Relación calidad-precio aceptable.,2025-11-22,Servicios,3
+8,12,2134.59,148.15,120,10,móvil,10,1008,Entrega rápida y buen empaque.,2025-11-22,Servicios,5
+9,6,4649.49,149.57,119,72,web,4,1009,No estoy satisfecho con la compra.,2025-12-17,Ropa,6
+10,27,369.4,171.42,35,9,móvil,4,1010,No estoy satisfecho con la compra.,2025-10-18,Electrónica,6
+11,21,5017.35,444.65,83,59,tienda_fisica,3,1011,No estoy satisfecho con la compra.,2025-05-16,Retail,6
+12,24,5866.63,450.95,52,47,web,4,1012,Relación calidad-precio aceptable.,2025-03-12,Servicios,3
+13,25,518.81,72.63,81,21,tienda_fisica,13,1013,"El servicio fue regular, podría mejorar.",2025-12-15,Hogar,6
+14,13,3847.11,498.14,68,33,móvil,9,1014,"El servicio fue regular, podría mejorar.",2025-01-06,Ropa,6
+15,25,6427.57,73.55,56,21,tienda_fisica,8,1015,Relación calidad-precio aceptable.,2025-01-02,Electrónica,3
+16,17,9130.65,437.85,39,65,tienda_fisica,10,1016,Excelente atención y variedad de productos.,2025-04-12,Retail,6
+17,18,9537.32,462.77,118,1,web,10,1017,Excelente atención y variedad de productos.,2025-06-15,Retail,6
+18,30,3661.66,492.95,104,40,móvil,4,1018,"El servicio fue regular, podría mejorar.",2025-01-30,Electrónica,6
+19,3,7332.48,411.69,98,69,web,13,1019,"El servicio fue regular, podría mejorar.",2025-03-06,Ropa,6
+20,9,5300.35,311.17,28,70,web,13,1020,Excelente atención y variedad de productos.,2025-12-20,Hogar,6
+21,22,6516.29,230.29,67,58,web,2,1021,El producto llegó defectuoso.,2025-05-07,Retail,4
+22,1,5903.67,130.46,29,1,web,2,1022,Entrega rápida y buen empaque.,2025-12-29,Electrónica,5
+23,3,9058.93,432.62,10,66,tienda_fisica,4,1023,No estoy satisfecho con la compra.,2025-05-23,Electrónica,6
+24,18,1366.5,469.05,74,61,tienda_fisica,4,1024,No estoy satisfecho con la compra.,2025-08-31,Hogar,6
+25,4,6606.88,190.06,53,60,móvil,14,1025,"El servicio fue regular, podría mejorar.",2025-01-28,Servicios,6
+26,13,7295.73,404.28,14,32,tienda_fisica,4,1026,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-08,Electrónica,9
+27,14,1875.71,242.06,112,10,tienda_fisica,8,1027,Excelente atención y variedad de productos.,2025-10-09,Hogar,6
+28,3,9267.35,427.37,22,53,web,8,1028,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-04,Electrónica,9
+29,6,3820.78,492.95,34,59,web,5,1029,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-05,Hogar,9
+30,5,1939.48,124.5,8,70,tienda_fisica,1,1030,"Muy recomendable, volvería a comprar.",2025-06-10,Ropa,5
+31,17,9197.9,274.94,8,66,web,2,1031,"Muy recomendable, volvería a comprar.",2025-04-06,Electrónica,5
+32,22,8625.1,213.81,114,32,web,10,1032,"El servicio fue regular, podría mejorar.",2025-11-01,Ropa,6
+33,14,6590.86,291.31,41,34,web,4,1033,"El servicio fue regular, podría mejorar.",2025-12-09,Ropa,6
+34,9,3988.07,342.41,39,59,tienda_fisica,6,1034,No estoy satisfecho con la compra.,2025-02-07,Retail,6
+35,3,5399.46,262.82,17,45,web,15,1035,"El servicio fue regular, podría mejorar.",2025-02-05,Hogar,6
+36,6,4409.94,280.74,39,68,web,1,1036,Relación calidad-precio aceptable.,2025-12-08,Retail,3
+37,29,1386.2,75.41,14,71,tienda_fisica,3,1037,"El servicio fue regular, podría mejorar.",2025-05-20,Retail,6
+38,23,3461.66,350.0,110,34,móvil,9,1038,No estoy satisfecho con la compra.,2025-09-08,Ropa,6
+39,21,4264.58,152.81,1,43,móvil,13,1039,"El servicio fue regular, podría mejorar.",2025-03-08,Electrónica,6
+40,24,4446.26,358.72,72,2,tienda_fisica,2,1040,Excelente atención y variedad de productos.,2025-02-08,Retail,6
+41,27,3723.7,285.21,56,17,tienda_fisica,1,1041,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-07,Servicios,9
+42,7,6836.56,340.13,46,72,móvil,15,1042,Entrega rápida y buen empaque.,2025-07-28,Electrónica,5
+43,28,1666.89,403.95,23,53,tienda_fisica,1,1043,No estoy satisfecho con la compra.,2025-04-02,Servicios,6
+44,26,6715.58,372.83,32,35,tienda_fisica,3,1044,El producto llegó defectuoso.,2025-12-26,Retail,4
+45,28,4733.37,115.79,118,59,web,6,1045,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-06,Hogar,9
+46,22,1971.64,177.57,111,9,web,13,1046,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-23,Servicios,9
+47,22,9812.44,277.38,4,15,móvil,15,1047,El producto llegó defectuoso.,2025-05-14,Ropa,4
+48,2,1128.61,228.59,94,41,web,7,1048,Relación calidad-precio aceptable.,2025-11-07,Ropa,3
+49,29,5787.05,142.27,91,56,tienda_fisica,1,1049,El producto llegó defectuoso.,2025-09-24,Electrónica,4
+50,14,746.24,338.83,43,41,tienda_fisica,11,1050,Entrega rápida y buen empaque.,2025-03-05,Servicios,5
+51,22,4113.51,213.15,38,71,tienda_fisica,3,1051,Relación calidad-precio aceptable.,2025-04-09,Retail,3
+52,20,5712.6,214.92,107,1,móvil,5,1052,Excelente atención y variedad de productos.,2025-05-27,Hogar,6
+53,15,4445.77,344.3,66,61,web,13,1053,Entrega rápida y buen empaque.,2025-03-28,Hogar,5
+54,17,6655.35,317.25,12,31,tienda_fisica,11,1054,Relación calidad-precio aceptable.,2025-06-08,Electrónica,3
+55,1,509.83,492.29,79,10,web,8,1055,Excelente atención y variedad de productos.,2025-08-01,Servicios,6
+56,23,6978.72,257.3,32,19,tienda_fisica,11,1056,No estoy satisfecho con la compra.,2025-12-19,Ropa,6
+57,8,1800.07,479.82,67,60,web,1,1057,El producto llegó defectuoso.,2025-10-13,Electrónica,4
+58,5,8024.1,340.44,72,41,web,13,1058,"Muy recomendable, volvería a comprar.",2025-08-15,Electrónica,5
+59,27,9073.2,234.04,21,61,tienda_fisica,8,1059,El producto llegó defectuoso.,2025-05-13,Ropa,4
+60,21,2430.5,231.14,92,37,web,4,1060,"Muy recomendable, volvería a comprar.",2025-05-20,Retail,5
+61,5,1550.77,203.86,20,28,móvil,2,1061,"El servicio fue regular, podría mejorar.",2025-08-01,Retail,6
+62,14,669.54,419.79,50,3,móvil,14,1062,"Muy recomendable, volvería a comprar.",2025-10-22,Retail,5
+63,12,3021.2,207.19,115,54,móvil,9,1063,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-07,Hogar,9
+64,8,2765.71,253.11,50,44,tienda_fisica,11,1064,"Muy recomendable, volvería a comprar.",2025-12-14,Servicios,5
+65,30,1319.9,318.68,4,51,móvil,10,1065,"Muy recomendable, volvería a comprar.",2025-10-16,Servicios,5
+66,21,4314.7,436.09,24,7,tienda_fisica,5,1066,"El servicio fue regular, podría mejorar.",2025-07-14,Electrónica,6
+67,11,3408.13,442.23,36,54,móvil,5,1067,"Muy recomendable, volvería a comprar.",2025-02-11,Servicios,5
+68,12,2281.01,52.94,84,6,móvil,13,1068,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-16,Electrónica,9
+69,20,1566.2,80.59,86,15,web,10,1069,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-22,Servicios,9
+70,6,6078.63,482.59,92,15,móvil,13,1070,Entrega rápida y buen empaque.,2025-03-25,Retail,5
+71,30,3153.97,345.13,49,51,móvil,12,1071,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-12,Electrónica,9
+72,4,6987.07,164.76,88,16,web,13,1072,No estoy satisfecho con la compra.,2025-10-17,Ropa,6
+73,22,3737.18,262.86,44,2,web,14,1073,El producto llegó defectuoso.,2025-08-04,Retail,4
+74,12,6374.07,417.78,91,20,móvil,7,1074,El producto llegó defectuoso.,2025-04-01,Electrónica,4
+75,20,8091.58,278.32,62,60,tienda_fisica,7,1075,Relación calidad-precio aceptable.,2025-10-31,Ropa,3
+76,27,9349.49,153.89,58,32,móvil,13,1076,No estoy satisfecho con la compra.,2025-08-26,Retail,6
+77,11,335.56,428.46,24,63,tienda_fisica,4,1077,El producto llegó defectuoso.,2025-07-01,Ropa,4
+78,29,5981.74,442.45,72,2,móvil,9,1078,Relación calidad-precio aceptable.,2025-04-08,Retail,3
+79,16,5574.0,135.36,61,63,web,8,1079,El producto llegó defectuoso.,2025-01-09,Servicios,4
+80,13,6933.28,166.98,75,48,web,8,1080,No estoy satisfecho con la compra.,2025-10-11,Retail,6
+81,24,5526.37,188.87,59,35,tienda_fisica,5,1081,El producto llegó defectuoso.,2025-05-09,Retail,4
+82,11,1239.57,277.21,98,24,web,4,1082,No estoy satisfecho con la compra.,2025-04-21,Electrónica,6
+83,24,5916.39,384.9,77,37,tienda_fisica,2,1083,Relación calidad-precio aceptable.,2025-04-10,Hogar,3
+84,6,3057.56,359.85,17,36,móvil,1,1084,Entrega rápida y buen empaque.,2025-01-28,Servicios,5
+85,21,8691.19,255.62,112,2,tienda_fisica,10,1085,Excelente atención y variedad de productos.,2025-05-26,Retail,6
+86,11,1884.42,44.66,111,62,móvil,2,1086,"Muy recomendable, volvería a comprar.",2025-02-03,Hogar,5
+87,19,6312.98,45.73,20,39,móvil,2,1087,"El servicio fue regular, podría mejorar.",2025-05-08,Hogar,6
+88,20,5981.46,316.84,100,67,web,7,1088,El producto llegó defectuoso.,2025-08-19,Ropa,4
+89,10,5707.86,48.91,95,13,móvil,13,1089,El producto llegó defectuoso.,2025-04-17,Retail,4
+90,22,857.82,135.14,71,10,tienda_fisica,3,1090,Relación calidad-precio aceptable.,2025-01-02,Servicios,3
+91,10,374.77,158.29,37,59,móvil,2,1091,"Muy recomendable, volvería a comprar.",2025-12-18,Hogar,5
+92,14,1192.02,127.91,20,35,web,14,1092,No estoy satisfecho con la compra.,2025-03-14,Retail,6
+93,26,3110.74,379.5,73,37,web,8,1093,Excelente atención y variedad de productos.,2025-03-05,Electrónica,6
+94,9,5029.7,257.02,11,6,móvil,15,1094,El producto llegó defectuoso.,2025-08-10,Retail,4
+95,1,958.7,481.72,108,3,tienda_fisica,13,1095,Relación calidad-precio aceptable.,2025-12-11,Retail,3
+96,25,7574.87,245.84,84,57,móvil,15,1096,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-23,Ropa,9
+97,21,8151.74,485.15,61,45,web,7,1097,El producto llegó defectuoso.,2025-06-20,Ropa,4
+98,11,4145.87,257.83,85,52,móvil,14,1098,Excelente atención y variedad de productos.,2025-10-09,Electrónica,6
+99,11,2561.37,75.64,99,52,web,14,1099,"El servicio fue regular, podría mejorar.",2025-09-21,Hogar,6
+100,14,589.33,268.85,80,64,web,11,1100,"Muy recomendable, volvería a comprar.",2025-08-15,Ropa,5
+101,18,1353.58,158.25,113,63,web,2,1101,Relación calidad-precio aceptable.,2025-01-15,Servicios,3
+102,23,1625.86,284.4,71,53,tienda_fisica,2,1102,No estoy satisfecho con la compra.,2025-04-26,Ropa,6
+103,21,8329.82,259.22,92,38,web,9,1103,"El servicio fue regular, podría mejorar.",2025-12-28,Hogar,6
+104,16,2475.12,284.61,50,25,móvil,15,1104,"Muy recomendable, volvería a comprar.",2025-11-03,Hogar,5
+105,9,7738.12,430.12,44,65,tienda_fisica,5,1105,"El servicio fue regular, podría mejorar.",2025-01-02,Servicios,6
+106,28,1528.52,278.52,45,43,móvil,9,1106,"Muy recomendable, volvería a comprar.",2025-10-06,Retail,5
+107,28,1927.09,354.8,74,50,móvil,4,1107,Entrega rápida y buen empaque.,2025-07-30,Hogar,5
+108,23,9138.63,202.99,85,20,web,8,1108,"Muy recomendable, volvería a comprar.",2025-01-19,Retail,5
+109,28,1048.63,425.62,13,68,web,15,1109,Entrega rápida y buen empaque.,2025-08-22,Ropa,5
+110,28,6565.07,94.09,61,34,web,6,1110,El producto llegó defectuoso.,2025-11-16,Servicios,4
+111,28,3319.23,343.69,69,49,tienda_fisica,6,1111,"El servicio fue regular, podría mejorar.",2025-11-17,Hogar,6
+112,20,730.79,322.96,118,37,tienda_fisica,4,1112,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-16,Hogar,9
+113,15,1705.33,163.74,4,6,móvil,6,1113,"El servicio fue regular, podría mejorar.",2025-01-29,Electrónica,6
+114,14,1498.42,274.96,73,24,móvil,3,1114,Entrega rápida y buen empaque.,2025-03-31,Retail,5
+115,20,6847.19,258.88,75,19,web,4,1115,El producto llegó defectuoso.,2025-08-25,Ropa,4
+116,9,6685.07,451.48,60,37,tienda_fisica,11,1116,"Muy recomendable, volvería a comprar.",2025-10-07,Retail,5
+117,12,9877.13,163.59,55,33,web,8,1117,"Muy recomendable, volvería a comprar.",2025-06-04,Electrónica,5
+118,4,2410.2,294.52,74,38,web,12,1118,"Muy recomendable, volvería a comprar.",2025-06-01,Hogar,5
+119,1,5680.99,349.18,96,7,web,15,1119,Relación calidad-precio aceptable.,2025-11-07,Hogar,3
+120,25,7998.66,311.39,46,29,tienda_fisica,11,1120,Relación calidad-precio aceptable.,2025-04-08,Hogar,3
+121,21,1016.78,321.18,6,40,tienda_fisica,13,1121,Excelente atención y variedad de productos.,2025-08-14,Retail,6
+122,24,1357.55,456.62,42,54,web,3,1122,Entrega rápida y buen empaque.,2025-04-13,Ropa,5
+123,17,5042.86,150.81,22,33,web,15,1123,Entrega rápida y buen empaque.,2025-09-04,Ropa,5
+124,15,9630.79,87.56,29,51,móvil,14,1124,"El servicio fue regular, podría mejorar.",2025-10-13,Retail,6
+125,1,2681.36,79.32,48,34,móvil,10,1125,El producto llegó defectuoso.,2025-07-15,Electrónica,4
+126,22,2376.53,32.01,114,72,tienda_fisica,6,1126,"El servicio fue regular, podría mejorar.",2025-11-09,Retail,6
+127,30,7025.72,331.63,15,18,web,1,1127,"Muy recomendable, volvería a comprar.",2025-01-20,Electrónica,5
+128,4,2386.26,278.02,50,59,móvil,6,1128,"El servicio fue regular, podría mejorar.",2025-12-10,Hogar,6
+129,19,7435.58,94.17,54,13,tienda_fisica,14,1129,El producto llegó defectuoso.,2025-09-08,Ropa,4
+130,2,6918.29,124.29,57,31,tienda_fisica,14,1130,Relación calidad-precio aceptable.,2025-07-05,Hogar,3
+131,2,4011.49,111.11,16,59,web,2,1131,Entrega rápida y buen empaque.,2025-12-06,Retail,5
+132,2,7878.61,136.91,17,27,web,2,1132,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-11,Ropa,9
+133,27,8703.47,177.71,19,1,web,5,1133,No estoy satisfecho con la compra.,2025-03-16,Ropa,6
+134,26,1786.25,337.31,4,17,web,1,1134,Relación calidad-precio aceptable.,2025-07-03,Ropa,3
+135,1,1783.75,45.15,95,54,web,9,1135,Entrega rápida y buen empaque.,2025-02-28,Ropa,5
+136,15,7791.27,266.35,14,58,tienda_fisica,9,1136,"Muy recomendable, volvería a comprar.",2025-04-24,Electrónica,5
+137,15,6451.24,34.95,62,52,tienda_fisica,7,1137,Relación calidad-precio aceptable.,2025-12-18,Electrónica,3
+138,3,8997.7,174.61,19,9,web,3,1138,"Muy recomendable, volvería a comprar.",2025-05-21,Hogar,5
+139,13,9946.55,274.67,59,65,tienda_fisica,10,1139,Entrega rápida y buen empaque.,2025-08-09,Ropa,5
+140,14,4542.97,129.68,44,59,web,7,1140,No estoy satisfecho con la compra.,2025-08-01,Electrónica,6
+141,14,3159.61,142.35,20,61,tienda_fisica,2,1141,Entrega rápida y buen empaque.,2025-02-16,Electrónica,5
+142,4,7458.66,198.87,17,72,web,1,1142,El producto llegó defectuoso.,2025-10-28,Electrónica,4
+143,22,1266.2,189.73,86,55,tienda_fisica,14,1143,Entrega rápida y buen empaque.,2025-01-27,Ropa,5
+144,12,1080.83,263.56,20,62,móvil,4,1144,Relación calidad-precio aceptable.,2025-02-25,Ropa,3
+145,4,7637.93,295.57,104,55,móvil,14,1145,Entrega rápida y buen empaque.,2025-10-15,Ropa,5
+146,20,9294.39,418.14,35,4,tienda_fisica,3,1146,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-20,Ropa,9
+147,12,110.75,437.53,73,52,tienda_fisica,2,1147,Entrega rápida y buen empaque.,2025-03-14,Retail,5
+148,24,5328.3,200.57,59,44,tienda_fisica,3,1148,"El servicio fue regular, podría mejorar.",2025-07-09,Electrónica,6
+149,29,573.46,95.56,80,7,móvil,11,1149,"El servicio fue regular, podría mejorar.",2025-02-11,Retail,6
+150,16,6090.41,218.81,28,66,móvil,2,1150,El producto llegó defectuoso.,2025-06-26,Hogar,4
+151,22,6800.94,253.58,86,40,móvil,1,1151,Relación calidad-precio aceptable.,2025-04-23,Electrónica,3
+152,1,2084.01,473.76,99,18,móvil,13,1152,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-11,Ropa,9
+153,1,4998.98,226.71,17,49,móvil,9,1153,"El servicio fue regular, podría mejorar.",2025-12-27,Retail,6
+154,3,4000.86,376.18,56,3,web,8,1154,Entrega rápida y buen empaque.,2025-02-09,Ropa,5
+155,19,4074.01,327.27,38,15,móvil,7,1155,El producto llegó defectuoso.,2025-01-11,Ropa,4
+156,27,6911.62,193.69,56,14,móvil,4,1156,"Muy recomendable, volvería a comprar.",2025-08-12,Servicios,5
+157,13,8711.72,377.99,29,43,tienda_fisica,13,1157,"El servicio fue regular, podría mejorar.",2025-03-28,Hogar,6
+158,17,5124.02,454.84,45,45,web,12,1158,"El servicio fue regular, podría mejorar.",2025-11-27,Ropa,6
+159,5,2596.88,103.28,20,10,web,3,1159,"El servicio fue regular, podría mejorar.",2025-11-18,Servicios,6
+160,22,9245.33,290.96,82,42,móvil,14,1160,"Muy recomendable, volvería a comprar.",2025-11-18,Hogar,5
+161,3,4715.76,323.06,102,36,móvil,10,1161,"Muy recomendable, volvería a comprar.",2025-01-29,Servicios,5
+162,10,4644.34,38.05,48,37,móvil,2,1162,"El servicio fue regular, podría mejorar.",2025-11-27,Ropa,6
+163,15,5824.28,478.03,95,6,web,8,1163,El producto llegó defectuoso.,2025-10-20,Ropa,4
+164,20,4782.51,92.41,8,58,tienda_fisica,2,1164,Entrega rápida y buen empaque.,2025-06-25,Servicios,5
+165,2,2515.05,230.12,57,68,tienda_fisica,9,1165,Excelente atención y variedad de productos.,2025-11-09,Electrónica,6
+166,30,2864.79,216.21,44,7,web,13,1166,Entrega rápida y buen empaque.,2025-11-20,Retail,5
+167,11,990.33,345.62,37,33,tienda_fisica,12,1167,"El servicio fue regular, podría mejorar.",2025-12-03,Retail,6
+168,3,5848.26,87.89,45,40,tienda_fisica,11,1168,Entrega rápida y buen empaque.,2025-12-24,Servicios,5
+169,20,7102.9,60.67,72,49,tienda_fisica,11,1169,Excelente atención y variedad de productos.,2025-06-18,Hogar,6
+170,21,6721.04,264.07,3,47,web,5,1170,"El servicio fue regular, podría mejorar.",2025-04-03,Ropa,6
+171,7,2304.1,86.03,10,38,web,14,1171,"Muy recomendable, volvería a comprar.",2025-02-21,Retail,5
+172,22,3400.81,387.83,17,49,tienda_fisica,3,1172,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-25,Ropa,9
+173,24,4404.85,217.21,87,31,web,8,1173,Excelente atención y variedad de productos.,2025-11-09,Ropa,6
+174,18,2429.73,483.49,101,61,móvil,15,1174,No estoy satisfecho con la compra.,2025-04-10,Hogar,6
+175,15,7705.91,393.5,65,68,móvil,7,1175,"Muy recomendable, volvería a comprar.",2025-03-24,Ropa,5
+176,28,2537.53,327.77,112,48,web,9,1176,Excelente atención y variedad de productos.,2025-02-22,Ropa,6
+177,10,884.56,96.95,58,66,tienda_fisica,3,1177,"El servicio fue regular, podría mejorar.",2025-08-12,Ropa,6
+178,29,3528.37,32.8,7,51,web,9,1178,"Muy recomendable, volvería a comprar.",2025-07-11,Servicios,5
+179,12,2284.16,172.97,13,43,web,13,1179,"El servicio fue regular, podría mejorar.",2025-03-16,Hogar,6
+180,30,8306.13,354.11,18,61,web,8,1180,Relación calidad-precio aceptable.,2025-11-12,Electrónica,3
+181,9,2195.76,91.77,94,68,web,7,1181,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-26,Electrónica,9
+182,4,525.11,221.52,102,59,móvil,2,1182,Relación calidad-precio aceptable.,2025-02-26,Servicios,3
+183,21,5177.99,136.13,19,38,móvil,7,1183,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-01,Ropa,9
+184,19,4194.85,338.9,11,68,tienda_fisica,6,1184,No estoy satisfecho con la compra.,2025-02-04,Retail,6
+185,13,8739.65,40.9,50,48,tienda_fisica,5,1185,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-09,Ropa,9
+186,8,7342.76,321.56,99,43,móvil,3,1186,Entrega rápida y buen empaque.,2025-01-23,Electrónica,5
+187,27,6445.82,418.58,88,60,móvil,12,1187,Entrega rápida y buen empaque.,2025-09-03,Ropa,5
+188,3,7174.65,472.93,5,38,tienda_fisica,4,1188,Excelente atención y variedad de productos.,2025-01-23,Servicios,6
+189,30,3135.26,211.15,105,70,web,8,1189,Entrega rápida y buen empaque.,2025-05-10,Electrónica,5
+190,12,8628.28,42.95,84,43,web,5,1190,Relación calidad-precio aceptable.,2025-03-05,Servicios,3
+191,24,4425.38,479.11,44,24,móvil,8,1191,El producto llegó defectuoso.,2025-12-21,Hogar,4
+192,26,871.98,223.76,56,24,móvil,9,1192,Relación calidad-precio aceptable.,2025-05-31,Retail,3
+193,11,6626.15,167.12,78,55,móvil,3,1193,"El servicio fue regular, podría mejorar.",2025-12-20,Electrónica,6
+194,2,7281.8,457.57,79,56,móvil,5,1194,"Muy recomendable, volvería a comprar.",2025-11-24,Retail,5
+195,12,5155.21,379.95,21,4,web,3,1195,El producto llegó defectuoso.,2025-11-08,Electrónica,4
+196,5,718.97,393.69,47,47,tienda_fisica,7,1196,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-18,Hogar,9
+197,22,4526.73,198.06,57,10,web,10,1197,Excelente atención y variedad de productos.,2025-03-12,Ropa,6
+198,11,6513.13,139.81,15,4,tienda_fisica,12,1198,El producto llegó defectuoso.,2025-04-06,Retail,4
+199,30,5638.64,145.65,34,58,móvil,4,1199,El producto llegó defectuoso.,2025-11-10,Ropa,4
+200,4,1400.5,55.54,23,57,móvil,2,1200,No estoy satisfecho con la compra.,2025-12-16,Hogar,6
+201,18,5444.61,447.84,109,21,móvil,12,1201,"El servicio fue regular, podría mejorar.",2025-12-30,Retail,6
+202,17,2281.2,492.86,102,18,tienda_fisica,4,1202,Entrega rápida y buen empaque.,2025-09-10,Servicios,5
+203,15,8046.43,284.79,79,12,web,2,1203,Entrega rápida y buen empaque.,2025-06-08,Retail,5
+204,25,4123.86,295.95,17,41,móvil,11,1204,El producto llegó defectuoso.,2025-02-07,Hogar,4
+205,5,8785.7,394.53,82,24,móvil,13,1205,Entrega rápida y buen empaque.,2025-03-08,Hogar,5
+206,27,1285.4,93.45,22,21,móvil,6,1206,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-30,Ropa,9
+207,28,834.66,114.22,71,36,web,3,1207,Relación calidad-precio aceptable.,2025-11-17,Retail,3
+208,17,6427.82,304.07,75,20,móvil,3,1208,"El servicio fue regular, podría mejorar.",2025-12-04,Ropa,6
+209,27,9243.1,39.77,111,4,tienda_fisica,2,1209,Entrega rápida y buen empaque.,2025-01-24,Ropa,5
+210,21,2147.54,294.63,80,4,tienda_fisica,8,1210,Relación calidad-precio aceptable.,2025-11-18,Ropa,3
+211,16,2486.54,407.53,52,39,tienda_fisica,8,1211,Relación calidad-precio aceptable.,2025-02-07,Retail,3
+212,15,4185.44,242.93,44,19,tienda_fisica,6,1212,Excelente atención y variedad de productos.,2025-06-13,Electrónica,6
+213,5,7618.62,267.19,14,41,tienda_fisica,4,1213,El producto llegó defectuoso.,2025-08-27,Retail,4
+214,8,1451.73,44.29,50,54,web,4,1214,"Muy recomendable, volvería a comprar.",2025-03-23,Retail,5
+215,7,7643.06,259.17,66,60,móvil,8,1215,Entrega rápida y buen empaque.,2025-06-07,Ropa,5
+216,13,5079.17,484.01,28,46,móvil,1,1216,"El servicio fue regular, podría mejorar.",2025-01-26,Electrónica,6
+217,10,5390.07,426.64,56,18,móvil,15,1217,"Muy recomendable, volvería a comprar.",2025-05-16,Hogar,5
+218,12,500.16,44.56,72,25,tienda_fisica,6,1218,El producto llegó defectuoso.,2025-10-11,Retail,4
+219,17,4531.03,283.93,106,16,móvil,3,1219,El producto llegó defectuoso.,2025-02-19,Electrónica,4
+220,18,9392.54,382.38,26,66,móvil,7,1220,Entrega rápida y buen empaque.,2025-09-14,Retail,5
+221,5,7150.24,405.9,67,59,web,3,1221,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-07,Electrónica,9
+222,30,6150.03,98.0,79,39,tienda_fisica,10,1222,Entrega rápida y buen empaque.,2025-06-22,Servicios,5
+223,23,5651.1,247.95,3,48,tienda_fisica,6,1223,"Muy recomendable, volvería a comprar.",2025-12-11,Ropa,5
+224,26,8992.73,438.61,81,4,web,10,1224,Relación calidad-precio aceptable.,2025-08-31,Hogar,3
+225,24,560.98,250.62,68,49,móvil,3,1225,No estoy satisfecho con la compra.,2025-12-15,Ropa,6
+226,7,238.43,170.57,20,53,web,12,1226,"El servicio fue regular, podría mejorar.",2025-04-15,Electrónica,6
+227,28,8491.35,369.15,91,18,móvil,9,1227,"Muy recomendable, volvería a comprar.",2025-04-17,Ropa,5
+228,17,3799.41,479.21,59,69,tienda_fisica,6,1228,"Muy recomendable, volvería a comprar.",2025-10-07,Retail,5
+229,7,9575.51,153.92,39,29,móvil,5,1229,"Muy recomendable, volvería a comprar.",2025-05-28,Retail,5
+230,11,4824.04,289.03,120,36,tienda_fisica,5,1230,"Muy recomendable, volvería a comprar.",2025-03-04,Servicios,5
+231,29,9802.6,412.82,99,19,tienda_fisica,5,1231,El producto llegó defectuoso.,2025-01-22,Ropa,4
+232,30,4451.64,143.09,62,28,móvil,4,1232,Entrega rápida y buen empaque.,2025-10-03,Electrónica,5
+233,5,1136.8,375.63,31,32,móvil,1,1233,Relación calidad-precio aceptable.,2025-12-09,Ropa,3
+234,2,1046.97,178.54,61,13,tienda_fisica,11,1234,No estoy satisfecho con la compra.,2025-03-12,Servicios,6
+235,14,6546.28,442.71,61,62,web,11,1235,Excelente atención y variedad de productos.,2025-04-13,Ropa,6
+236,21,638.67,388.99,84,30,móvil,9,1236,Relación calidad-precio aceptable.,2025-01-20,Retail,3
+237,30,9200.37,498.64,51,64,web,3,1237,Excelente atención y variedad de productos.,2025-05-29,Hogar,6
+238,19,6047.69,465.66,43,37,web,8,1238,Relación calidad-precio aceptable.,2025-11-25,Electrónica,3
+239,29,9388.68,428.51,60,35,tienda_fisica,4,1239,"Muy recomendable, volvería a comprar.",2025-02-27,Ropa,5
+240,21,2609.79,109.38,95,44,móvil,13,1240,"Muy recomendable, volvería a comprar.",2025-06-01,Servicios,5
+241,20,8568.66,450.58,106,55,tienda_fisica,9,1241,Excelente atención y variedad de productos.,2025-06-17,Servicios,6
+242,6,9817.77,249.18,120,32,web,1,1242,"El servicio fue regular, podría mejorar.",2025-05-14,Hogar,6
+243,25,2706.59,178.22,75,2,móvil,5,1243,"Muy recomendable, volvería a comprar.",2025-12-01,Servicios,5
+244,22,1226.34,167.27,52,65,móvil,15,1244,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-27,Servicios,9
+245,12,6165.52,125.18,18,62,móvil,3,1245,Relación calidad-precio aceptable.,2025-08-21,Electrónica,3
+246,14,7034.31,458.14,97,69,tienda_fisica,13,1246,Entrega rápida y buen empaque.,2025-12-07,Ropa,5
+247,17,4495.14,357.81,10,15,web,1,1247,"El servicio fue regular, podría mejorar.",2025-10-08,Servicios,6
+248,6,3314.77,269.76,15,27,tienda_fisica,12,1248,Excelente atención y variedad de productos.,2025-10-26,Servicios,6
+249,26,603.58,83.33,54,59,móvil,10,1249,"Muy recomendable, volvería a comprar.",2025-01-30,Electrónica,5
+250,24,266.62,142.14,1,28,tienda_fisica,10,1250,Relación calidad-precio aceptable.,2025-02-07,Hogar,3
+251,23,684.41,497.18,120,9,web,15,1251,Entrega rápida y buen empaque.,2025-08-30,Hogar,5
+252,6,7701.27,387.6,94,54,web,6,1252,El producto llegó defectuoso.,2025-07-15,Retail,4
+253,3,6843.17,337.66,70,18,móvil,11,1253,El producto llegó defectuoso.,2025-06-28,Hogar,4
+254,17,1317.1,489.79,107,1,web,13,1254,El producto llegó defectuoso.,2025-01-12,Servicios,4
+255,18,3823.8,130.24,59,45,móvil,3,1255,El producto llegó defectuoso.,2025-05-22,Hogar,4
+256,26,6618.97,315.16,120,3,web,4,1256,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-16,Electrónica,9
+257,15,5997.96,357.58,7,32,web,12,1257,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-23,Electrónica,9
+258,18,2211.83,434.59,8,18,móvil,9,1258,No estoy satisfecho con la compra.,2025-05-29,Hogar,6
+259,19,5999.28,342.82,42,31,web,5,1259,Entrega rápida y buen empaque.,2025-03-15,Ropa,5
+260,14,3039.98,49.26,76,23,tienda_fisica,11,1260,No estoy satisfecho con la compra.,2025-12-14,Ropa,6
+261,2,9724.29,471.96,86,49,móvil,13,1261,"Muy recomendable, volvería a comprar.",2025-09-26,Ropa,5
+262,5,3033.89,108.26,69,61,móvil,4,1262,El producto llegó defectuoso.,2025-04-26,Hogar,4
+263,30,623.36,218.09,54,72,móvil,9,1263,"Muy recomendable, volvería a comprar.",2025-03-10,Servicios,5
+264,7,3336.12,57.95,58,48,móvil,2,1264,Relación calidad-precio aceptable.,2025-10-02,Servicios,3
+265,9,3802.82,310.39,6,10,tienda_fisica,4,1265,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-28,Servicios,9
+266,16,2128.45,455.38,39,2,tienda_fisica,4,1266,No estoy satisfecho con la compra.,2025-04-08,Ropa,6
+267,30,2463.8,310.11,27,51,tienda_fisica,15,1267,"Muy recomendable, volvería a comprar.",2025-05-03,Electrónica,5
+268,13,4689.19,331.39,40,34,tienda_fisica,6,1268,Relación calidad-precio aceptable.,2025-09-20,Retail,3
+269,26,9814.12,245.36,108,41,móvil,15,1269,"El servicio fue regular, podría mejorar.",2025-04-15,Hogar,6
+270,2,5647.12,126.21,19,3,móvil,5,1270,El producto llegó defectuoso.,2025-10-11,Retail,4
+271,10,1566.49,178.34,49,32,tienda_fisica,8,1271,El producto llegó defectuoso.,2025-10-09,Ropa,4
+272,25,8224.84,483.92,83,63,tienda_fisica,8,1272,Relación calidad-precio aceptable.,2025-03-28,Retail,3
+273,5,7217.12,254.39,118,70,tienda_fisica,11,1273,Excelente atención y variedad de productos.,2025-01-31,Retail,6
+274,27,6698.74,386.88,53,18,tienda_fisica,14,1274,"El servicio fue regular, podría mejorar.",2025-11-19,Electrónica,6
+275,1,2226.26,238.88,8,62,web,11,1275,Excelente atención y variedad de productos.,2025-09-07,Electrónica,6
+276,1,216.43,366.65,69,37,web,1,1276,El producto llegó defectuoso.,2025-09-15,Electrónica,4
+277,4,9184.59,271.7,31,25,tienda_fisica,10,1277,Excelente atención y variedad de productos.,2025-09-27,Hogar,6
+278,26,3999.12,199.06,52,59,móvil,10,1278,Relación calidad-precio aceptable.,2025-05-05,Retail,3
+279,22,8289.22,58.7,110,5,tienda_fisica,2,1279,Relación calidad-precio aceptable.,2025-07-27,Servicios,3
+280,2,6385.64,357.37,11,64,móvil,14,1280,"Muy recomendable, volvería a comprar.",2025-08-11,Hogar,5
+281,29,5305.18,40.42,28,61,tienda_fisica,5,1281,"El servicio fue regular, podría mejorar.",2025-01-24,Retail,6
+282,6,9291.23,170.95,27,19,web,13,1282,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-31,Retail,9
+283,6,5661.38,292.01,109,50,móvil,11,1283,Relación calidad-precio aceptable.,2025-10-04,Electrónica,3
+284,26,9885.36,367.6,65,45,móvil,1,1284,Excelente atención y variedad de productos.,2025-02-20,Hogar,6
+285,11,6071.43,314.66,77,51,móvil,13,1285,"El servicio fue regular, podría mejorar.",2025-06-17,Servicios,6
+286,16,2319.98,285.46,49,56,web,3,1286,"Muy recomendable, volvería a comprar.",2025-12-15,Retail,5
+287,25,6205.23,403.07,92,10,tienda_fisica,2,1287,"El servicio fue regular, podría mejorar.",2025-05-18,Hogar,6
+288,24,3926.74,193.14,12,1,web,5,1288,Excelente atención y variedad de productos.,2025-08-16,Hogar,6
+289,5,918.61,226.87,72,72,móvil,9,1289,"El servicio fue regular, podría mejorar.",2025-07-28,Retail,6
+290,12,5564.49,306.52,101,42,web,14,1290,"El servicio fue regular, podría mejorar.",2025-07-17,Electrónica,6
+291,13,7802.73,367.93,72,32,web,10,1291,El producto llegó defectuoso.,2025-09-24,Retail,4
+292,5,2725.74,148.84,19,9,web,3,1292,Excelente atención y variedad de productos.,2025-08-11,Hogar,6
+293,16,7837.53,193.34,32,64,móvil,10,1293,Relación calidad-precio aceptable.,2025-11-12,Hogar,3
+294,5,3081.35,475.44,43,49,web,13,1294,"El servicio fue regular, podría mejorar.",2025-06-18,Hogar,6
+295,27,8244.18,332.5,77,18,móvil,5,1295,El producto llegó defectuoso.,2025-06-14,Retail,4
+296,11,1817.49,211.15,41,38,tienda_fisica,12,1296,"Muy recomendable, volvería a comprar.",2025-12-22,Servicios,5
+297,11,3791.75,411.92,51,47,tienda_fisica,2,1297,No estoy satisfecho con la compra.,2025-10-16,Hogar,6
+298,22,7687.8,32.92,94,60,web,12,1298,Excelente atención y variedad de productos.,2025-04-18,Ropa,6
+299,27,8485.49,401.62,87,64,móvil,3,1299,"El servicio fue regular, podría mejorar.",2025-11-21,Retail,6
+300,22,1583.73,223.1,49,10,móvil,8,1300,Relación calidad-precio aceptable.,2025-11-03,Servicios,3
+301,18,5090.8,461.79,89,54,móvil,9,1301,El producto llegó defectuoso.,2025-01-19,Ropa,4
+302,4,7701.09,335.65,46,22,móvil,11,1302,"El servicio fue regular, podría mejorar.",2025-11-10,Ropa,6
+303,25,3349.39,402.19,14,2,web,2,1303,El producto llegó defectuoso.,2025-05-13,Ropa,4
+304,15,3772.49,242.27,87,65,web,3,1304,No estoy satisfecho con la compra.,2025-06-26,Ropa,6
+305,10,4188.96,481.63,15,19,web,6,1305,"El servicio fue regular, podría mejorar.",2025-06-09,Hogar,6
+306,17,4855.11,248.56,57,58,móvil,6,1306,No estoy satisfecho con la compra.,2025-02-04,Hogar,6
+307,1,8499.34,331.03,87,22,móvil,15,1307,"El servicio fue regular, podría mejorar.",2025-05-05,Electrónica,6
+308,11,5620.5,480.06,30,52,tienda_fisica,11,1308,Excelente atención y variedad de productos.,2025-04-05,Servicios,6
+309,1,7387.01,443.89,58,55,web,7,1309,El producto llegó defectuoso.,2025-01-03,Hogar,4
+310,9,7535.64,408.19,9,14,tienda_fisica,13,1310,No estoy satisfecho con la compra.,2025-10-02,Servicios,6
+311,7,4602.63,145.93,111,63,web,9,1311,Entrega rápida y buen empaque.,2025-11-24,Retail,5
+312,20,3955.81,74.83,46,59,móvil,10,1312,El producto llegó defectuoso.,2025-03-30,Ropa,4
+313,22,1382.78,76.57,40,15,tienda_fisica,3,1313,"El servicio fue regular, podría mejorar.",2025-07-11,Retail,6
+314,14,5984.44,295.91,55,24,tienda_fisica,8,1314,El producto llegó defectuoso.,2025-11-22,Servicios,4
+315,16,2923.91,109.81,108,58,tienda_fisica,10,1315,Excelente atención y variedad de productos.,2025-01-28,Servicios,6
+316,5,1991.53,204.29,72,65,móvil,11,1316,"Muy recomendable, volvería a comprar.",2025-09-11,Electrónica,5
+317,23,8406.92,254.58,11,4,móvil,13,1317,El producto llegó defectuoso.,2025-04-23,Hogar,4
+318,8,5399.21,100.74,59,64,móvil,9,1318,Relación calidad-precio aceptable.,2025-09-19,Electrónica,3
+319,9,7762.37,415.18,47,70,web,14,1319,"El servicio fue regular, podría mejorar.",2025-01-22,Ropa,6
+320,14,1069.04,418.43,97,32,tienda_fisica,5,1320,No estoy satisfecho con la compra.,2025-01-17,Hogar,6
+321,28,8176.45,230.75,16,31,móvil,4,1321,Entrega rápida y buen empaque.,2025-10-29,Retail,5
+322,6,6180.7,396.73,105,27,tienda_fisica,13,1322,El producto llegó defectuoso.,2025-01-31,Retail,4
+323,20,5410.75,175.35,91,38,tienda_fisica,5,1323,Relación calidad-precio aceptable.,2025-10-21,Retail,3
+324,5,9629.58,397.13,118,8,móvil,5,1324,"El servicio fue regular, podría mejorar.",2025-12-02,Ropa,6
+325,5,7128.38,417.67,98,51,web,8,1325,No estoy satisfecho con la compra.,2025-03-14,Servicios,6
+326,13,4547.32,324.14,113,12,tienda_fisica,7,1326,El producto llegó defectuoso.,2025-09-21,Retail,4
+327,15,9505.03,177.1,1,12,tienda_fisica,12,1327,Entrega rápida y buen empaque.,2025-08-23,Retail,5
+328,26,5367.52,124.56,55,28,tienda_fisica,8,1328,"El servicio fue regular, podría mejorar.",2025-05-18,Retail,6
+329,18,5800.44,291.75,63,44,móvil,15,1329,Entrega rápida y buen empaque.,2025-12-16,Retail,5
+330,21,7849.7,240.6,16,21,web,8,1330,"El servicio fue regular, podría mejorar.",2025-08-22,Electrónica,6
+331,23,9098.6,443.43,39,21,web,14,1331,No estoy satisfecho con la compra.,2025-05-21,Hogar,6
+332,3,3749.85,453.82,22,7,web,7,1332,Relación calidad-precio aceptable.,2025-11-17,Retail,3
+333,21,957.43,65.69,28,62,móvil,2,1333,El producto llegó defectuoso.,2025-03-09,Servicios,4
+334,1,130.22,184.92,16,55,tienda_fisica,12,1334,"Muy recomendable, volvería a comprar.",2025-03-09,Servicios,5
+335,13,938.84,406.86,14,41,móvil,6,1335,No estoy satisfecho con la compra.,2025-06-03,Electrónica,6
+336,21,9929.75,88.57,68,2,web,10,1336,Excelente atención y variedad de productos.,2025-11-29,Hogar,6
+337,24,2169.9,379.17,118,53,web,10,1337,Entrega rápida y buen empaque.,2025-12-18,Hogar,5
+338,29,1049.63,381.17,76,50,móvil,6,1338,"El servicio fue regular, podría mejorar.",2025-08-08,Servicios,6
+339,9,6463.97,139.12,77,37,móvil,13,1339,No estoy satisfecho con la compra.,2025-12-20,Servicios,6
+340,17,6088.92,110.55,51,38,web,11,1340,No estoy satisfecho con la compra.,2025-01-28,Retail,6
+341,4,2448.76,326.28,10,68,web,15,1341,El producto llegó defectuoso.,2025-01-07,Hogar,4
+342,13,8615.1,292.82,47,70,móvil,11,1342,Excelente atención y variedad de productos.,2025-03-30,Retail,6
+343,19,721.95,145.85,6,8,móvil,13,1343,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-23,Electrónica,9
+344,14,7033.02,59.57,69,69,tienda_fisica,10,1344,El producto llegó defectuoso.,2025-03-20,Retail,4
+345,3,5137.48,117.53,104,20,móvil,9,1345,Relación calidad-precio aceptable.,2025-06-17,Electrónica,3
+346,10,7001.83,370.38,109,31,móvil,1,1346,"El servicio fue regular, podría mejorar.",2025-05-06,Ropa,6
+347,15,6142.35,46.41,86,23,web,2,1347,"El servicio fue regular, podría mejorar.",2025-01-07,Hogar,6
+348,6,4989.31,186.42,67,34,tienda_fisica,3,1348,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-10,Servicios,9
+349,25,9003.98,180.81,55,35,web,9,1349,"El servicio fue regular, podría mejorar.",2025-02-02,Retail,6
+350,16,4579.22,192.86,64,22,móvil,6,1350,"El servicio fue regular, podría mejorar.",2025-03-22,Ropa,6
+351,8,7420.76,21.23,110,2,móvil,4,1351,"El servicio fue regular, podría mejorar.",2025-01-24,Electrónica,6
+352,30,1543.34,466.96,110,5,móvil,9,1352,El producto llegó defectuoso.,2026-01-01,Retail,4
+353,11,2520.22,459.61,41,35,tienda_fisica,14,1353,No estoy satisfecho con la compra.,2025-02-09,Hogar,6
+354,17,6749.59,45.28,29,67,tienda_fisica,1,1354,"El servicio fue regular, podría mejorar.",2025-07-25,Retail,6
+355,25,8456.22,177.1,71,59,web,1,1355,Relación calidad-precio aceptable.,2025-07-08,Hogar,3
+356,24,6246.04,242.68,76,64,web,13,1356,Relación calidad-precio aceptable.,2025-04-11,Retail,3
+357,5,113.46,216.82,30,70,tienda_fisica,6,1357,No estoy satisfecho con la compra.,2025-11-22,Ropa,6
+358,1,7601.35,200.61,95,40,tienda_fisica,2,1358,Entrega rápida y buen empaque.,2025-04-16,Electrónica,5
+359,16,9613.79,486.83,19,36,tienda_fisica,2,1359,El producto llegó defectuoso.,2025-01-23,Servicios,4
+360,23,8961.0,240.06,96,11,web,10,1360,El producto llegó defectuoso.,2025-02-18,Ropa,4
+361,3,5939.36,49.9,85,17,tienda_fisica,4,1361,El producto llegó defectuoso.,2025-05-30,Servicios,4
+362,23,8327.4,176.6,58,35,móvil,4,1362,El producto llegó defectuoso.,2025-02-08,Retail,4
+363,5,1101.29,235.79,41,53,web,2,1363,"El servicio fue regular, podría mejorar.",2025-10-02,Servicios,6
+364,10,4660.3,429.19,12,21,móvil,13,1364,"Muy recomendable, volvería a comprar.",2025-12-18,Servicios,5
+365,7,8367.45,177.34,12,32,móvil,6,1365,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-22,Ropa,9
+366,9,8209.89,103.46,52,58,tienda_fisica,9,1366,Relación calidad-precio aceptable.,2025-10-09,Electrónica,3
+367,4,8048.77,87.1,2,8,web,14,1367,"Muy recomendable, volvería a comprar.",2025-04-24,Electrónica,5
+368,12,6878.54,470.04,11,34,web,15,1368,El producto llegó defectuoso.,2025-02-08,Servicios,4
+369,29,6477.57,408.46,12,43,web,2,1369,No estoy satisfecho con la compra.,2025-01-22,Electrónica,6
+370,30,5760.15,414.41,51,64,móvil,1,1370,Excelente atención y variedad de productos.,2025-07-15,Electrónica,6
+371,12,2186.43,109.83,36,58,tienda_fisica,15,1371,Excelente atención y variedad de productos.,2025-03-18,Hogar,6
+372,21,2986.3,217.76,71,62,web,1,1372,No estoy satisfecho con la compra.,2025-02-14,Ropa,6
+373,14,2034.61,444.63,68,32,móvil,11,1373,Excelente atención y variedad de productos.,2025-10-06,Hogar,6
+374,16,5467.95,252.65,117,65,web,6,1374,Entrega rápida y buen empaque.,2025-07-18,Hogar,5
+375,11,5991.31,34.07,104,36,móvil,1,1375,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-30,Servicios,9
+376,6,1046.34,335.29,35,69,tienda_fisica,14,1376,No estoy satisfecho con la compra.,2025-01-29,Retail,6
+377,12,9355.3,495.94,23,23,web,4,1377,El producto llegó defectuoso.,2025-10-31,Ropa,4
+378,23,7020.58,474.83,73,19,móvil,10,1378,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-07,Retail,9
+379,6,4929.84,63.32,30,29,móvil,1,1379,Relación calidad-precio aceptable.,2025-09-27,Ropa,3
+380,30,6160.64,407.09,44,23,móvil,15,1380,Entrega rápida y buen empaque.,2025-06-15,Electrónica,5
+381,19,7061.73,87.99,15,68,web,14,1381,Excelente atención y variedad de productos.,2025-07-06,Electrónica,6
+382,19,1055.27,164.85,18,21,web,12,1382,El producto llegó defectuoso.,2025-08-12,Retail,4
+383,6,7086.47,289.75,114,46,tienda_fisica,4,1383,Entrega rápida y buen empaque.,2025-12-07,Hogar,5
+384,10,7353.25,161.37,23,1,tienda_fisica,12,1384,El producto llegó defectuoso.,2025-10-21,Servicios,4
+385,6,6043.77,462.1,79,29,móvil,11,1385,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-17,Ropa,9
+386,11,7466.17,134.24,41,22,web,11,1386,Excelente atención y variedad de productos.,2025-02-15,Hogar,6
+387,1,2688.86,139.78,9,45,tienda_fisica,5,1387,"Muy recomendable, volvería a comprar.",2025-02-25,Retail,5
+388,13,4410.29,221.43,22,53,tienda_fisica,8,1388,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-13,Electrónica,9
+389,4,8296.63,398.59,74,29,móvil,3,1389,El producto llegó defectuoso.,2025-08-20,Ropa,4
+390,1,3221.23,476.8,10,44,web,3,1390,Relación calidad-precio aceptable.,2025-07-12,Electrónica,3
+391,11,5960.6,314.55,62,4,web,7,1391,"El servicio fue regular, podría mejorar.",2025-12-01,Electrónica,6
+392,6,582.88,178.93,25,53,web,12,1392,El producto llegó defectuoso.,2025-10-11,Ropa,4
+393,22,2851.15,134.02,7,51,tienda_fisica,10,1393,Relación calidad-precio aceptable.,2025-10-09,Ropa,3
+394,12,87.96,62.06,106,62,móvil,4,1394,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-19,Servicios,9
+395,21,2953.52,59.33,109,15,web,5,1395,Excelente atención y variedad de productos.,2025-07-23,Servicios,6
+396,3,6436.57,206.01,48,49,móvil,6,1396,Relación calidad-precio aceptable.,2025-04-06,Hogar,3
+397,15,4677.33,128.6,35,8,móvil,3,1397,Relación calidad-precio aceptable.,2025-12-23,Electrónica,3
+398,22,3470.72,279.9,97,30,tienda_fisica,9,1398,"El servicio fue regular, podría mejorar.",2025-02-01,Electrónica,6
+399,18,6886.33,469.45,74,31,móvil,8,1399,El producto llegó defectuoso.,2025-06-03,Ropa,4
+400,17,5733.64,268.07,74,19,web,2,1400,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-18,Hogar,9
+401,26,1967.62,40.48,11,56,web,4,1401,No estoy satisfecho con la compra.,2025-11-18,Servicios,6
+402,11,9112.5,458.8,9,12,web,7,1402,Relación calidad-precio aceptable.,2025-10-12,Ropa,3
+403,28,2798.2,239.92,112,2,móvil,13,1403,Entrega rápida y buen empaque.,2025-12-25,Ropa,5
+404,4,4173.7,91.14,76,13,tienda_fisica,15,1404,El producto llegó defectuoso.,2025-02-24,Ropa,4
+405,28,5379.55,185.06,53,34,tienda_fisica,7,1405,Relación calidad-precio aceptable.,2025-12-02,Electrónica,3
+406,2,1763.39,213.43,80,52,móvil,1,1406,"Muy recomendable, volvería a comprar.",2025-07-22,Ropa,5
+407,24,4778.42,148.92,48,3,móvil,6,1407,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-05,Servicios,9
+408,28,6977.02,67.14,112,30,móvil,3,1408,"Muy recomendable, volvería a comprar.",2025-06-03,Retail,5
+409,9,7301.55,310.39,12,25,tienda_fisica,8,1409,Entrega rápida y buen empaque.,2025-04-19,Hogar,5
+410,27,609.25,399.92,9,40,móvil,12,1410,Entrega rápida y buen empaque.,2025-09-17,Hogar,5
+411,6,1968.0,419.81,108,8,móvil,4,1411,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-17,Servicios,9
+412,23,2031.14,196.81,60,65,móvil,7,1412,Entrega rápida y buen empaque.,2025-11-22,Electrónica,5
+413,12,4913.43,234.13,112,61,web,10,1413,No estoy satisfecho con la compra.,2025-10-10,Electrónica,6
+414,27,8950.19,379.5,89,12,móvil,5,1414,Excelente atención y variedad de productos.,2025-01-15,Retail,6
+415,28,5743.97,483.16,110,29,móvil,11,1415,Excelente atención y variedad de productos.,2025-04-26,Electrónica,6
+416,21,4124.6,29.63,100,2,tienda_fisica,8,1416,Relación calidad-precio aceptable.,2025-03-09,Servicios,3
+417,8,2561.28,406.44,40,36,tienda_fisica,7,1417,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-12,Servicios,9
+418,7,4693.65,345.05,106,51,móvil,10,1418,Relación calidad-precio aceptable.,2025-02-22,Hogar,3
+419,18,6491.05,312.34,39,14,web,8,1419,Entrega rápida y buen empaque.,2025-02-02,Ropa,5
+420,28,2805.01,334.94,115,39,móvil,4,1420,Entrega rápida y buen empaque.,2025-03-18,Retail,5
+421,26,8580.29,408.81,52,41,tienda_fisica,11,1421,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-13,Servicios,9
+422,10,2631.29,220.91,50,5,tienda_fisica,10,1422,"Muy recomendable, volvería a comprar.",2025-12-29,Electrónica,5
+423,24,7148.02,349.43,82,61,tienda_fisica,15,1423,Entrega rápida y buen empaque.,2025-12-10,Servicios,5
+424,28,1741.37,335.66,72,24,móvil,5,1424,Relación calidad-precio aceptable.,2025-02-19,Ropa,3
+425,24,8093.02,386.2,24,43,móvil,11,1425,Relación calidad-precio aceptable.,2025-02-15,Servicios,3
+426,24,8720.75,221.83,114,43,web,6,1426,No estoy satisfecho con la compra.,2025-05-14,Retail,6
+427,28,1221.93,45.76,82,10,tienda_fisica,8,1427,"Muy recomendable, volvería a comprar.",2025-04-10,Retail,5
+428,17,3018.64,45.95,110,20,tienda_fisica,3,1428,El producto llegó defectuoso.,2025-04-13,Electrónica,4
+429,5,3198.02,363.52,100,11,móvil,8,1429,"Muy recomendable, volvería a comprar.",2025-06-20,Hogar,5
+430,21,627.24,236.99,27,22,tienda_fisica,10,1430,Entrega rápida y buen empaque.,2025-03-23,Servicios,5
+431,20,4365.43,226.12,55,62,móvil,7,1431,Excelente atención y variedad de productos.,2025-01-03,Electrónica,6
+432,24,3762.36,26.76,42,68,web,4,1432,No estoy satisfecho con la compra.,2025-01-10,Ropa,6
+433,8,6950.57,185.29,17,14,tienda_fisica,7,1433,No estoy satisfecho con la compra.,2025-09-15,Electrónica,6
+434,3,8247.25,163.14,38,59,tienda_fisica,12,1434,Excelente atención y variedad de productos.,2025-09-24,Retail,6
+435,14,8885.34,497.83,44,63,tienda_fisica,6,1435,Entrega rápida y buen empaque.,2025-04-07,Ropa,5
+436,8,2282.0,492.74,28,3,web,10,1436,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-16,Hogar,9
+437,23,6522.88,37.93,113,33,web,13,1437,Entrega rápida y buen empaque.,2025-10-01,Electrónica,5
+438,22,1125.73,421.34,7,15,tienda_fisica,7,1438,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-16,Electrónica,9
+439,16,7033.59,118.64,88,2,móvil,5,1439,Relación calidad-precio aceptable.,2025-08-04,Electrónica,3
+440,20,6076.06,85.84,107,14,tienda_fisica,9,1440,Relación calidad-precio aceptable.,2025-11-13,Electrónica,3
+441,26,1107.32,115.35,26,34,web,14,1441,"El servicio fue regular, podría mejorar.",2025-09-25,Retail,6
+442,10,1645.72,283.11,117,27,web,12,1442,El producto llegó defectuoso.,2025-09-04,Retail,4
+443,1,6732.75,455.3,107,64,móvil,3,1443,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-16,Servicios,9
+444,29,2596.13,130.96,38,34,tienda_fisica,8,1444,"El servicio fue regular, podría mejorar.",2025-01-26,Electrónica,6
+445,28,2941.14,404.77,41,55,web,12,1445,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-01,Servicios,9
+446,28,1427.02,330.66,43,46,web,15,1446,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-13,Electrónica,9
+447,12,8158.89,107.78,52,52,tienda_fisica,8,1447,"El servicio fue regular, podría mejorar.",2025-05-20,Retail,6
+448,21,8866.93,100.05,17,8,móvil,14,1448,El producto llegó defectuoso.,2025-03-23,Hogar,4
+449,26,5710.99,230.32,79,49,web,13,1449,"Muy recomendable, volvería a comprar.",2025-07-03,Hogar,5
+450,16,9207.96,74.21,53,57,tienda_fisica,1,1450,Excelente atención y variedad de productos.,2025-02-02,Electrónica,6
+451,23,8689.91,271.91,96,29,móvil,11,1451,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-23,Retail,9
+452,14,6634.05,139.32,45,50,tienda_fisica,3,1452,"El servicio fue regular, podría mejorar.",2025-10-13,Ropa,6
+453,21,9347.0,262.67,61,64,tienda_fisica,14,1453,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-26,Electrónica,9
+454,8,3342.4,153.52,65,29,web,9,1454,Entrega rápida y buen empaque.,2025-11-26,Hogar,5
+455,3,4617.99,404.61,58,12,móvil,14,1455,No estoy satisfecho con la compra.,2025-09-13,Hogar,6
+456,16,7465.13,28.53,52,53,móvil,1,1456,"El servicio fue regular, podría mejorar.",2025-10-13,Retail,6
+457,26,6061.82,317.15,39,66,tienda_fisica,9,1457,"El servicio fue regular, podría mejorar.",2025-04-16,Electrónica,6
+458,12,8261.84,411.96,109,59,tienda_fisica,6,1458,Entrega rápida y buen empaque.,2025-10-14,Hogar,5
+459,23,6588.81,363.64,15,13,tienda_fisica,13,1459,"Muy recomendable, volvería a comprar.",2025-12-04,Ropa,5
+460,12,8307.34,482.93,38,71,web,9,1460,Entrega rápida y buen empaque.,2025-07-11,Electrónica,5
+461,29,1683.35,87.42,92,53,tienda_fisica,2,1461,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-11,Electrónica,9
+462,4,9305.65,208.59,59,25,tienda_fisica,12,1462,No estoy satisfecho con la compra.,2025-06-23,Servicios,6
+463,30,6350.74,342.63,16,58,web,8,1463,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-04,Hogar,9
+464,16,93.16,373.38,71,56,tienda_fisica,14,1464,Excelente atención y variedad de productos.,2025-10-27,Ropa,6
+465,23,5806.62,370.64,17,14,móvil,7,1465,Excelente atención y variedad de productos.,2025-12-03,Ropa,6
+466,17,8819.84,220.96,78,32,tienda_fisica,5,1466,Entrega rápida y buen empaque.,2025-07-23,Ropa,5
+467,26,1377.05,218.12,90,66,móvil,5,1467,"Muy recomendable, volvería a comprar.",2025-12-26,Retail,5
+468,7,2136.64,362.9,88,45,tienda_fisica,15,1468,No estoy satisfecho con la compra.,2025-12-11,Retail,6
+469,23,1198.28,189.07,62,54,web,11,1469,Entrega rápida y buen empaque.,2025-10-01,Servicios,5
+470,17,1109.38,202.82,7,8,móvil,4,1470,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-17,Hogar,9
+471,5,8401.85,351.49,38,27,web,13,1471,Relación calidad-precio aceptable.,2025-10-05,Retail,3
+472,4,6180.28,344.25,72,29,web,12,1472,"Muy recomendable, volvería a comprar.",2025-11-28,Retail,5
+473,17,7853.86,403.43,37,7,tienda_fisica,15,1473,No estoy satisfecho con la compra.,2025-07-15,Hogar,6
+474,18,585.33,376.96,26,57,móvil,14,1474,Entrega rápida y buen empaque.,2025-04-26,Hogar,5
+475,25,7262.9,112.88,58,23,tienda_fisica,11,1475,No estoy satisfecho con la compra.,2025-02-08,Retail,6
+476,13,454.31,153.97,34,17,web,3,1476,"El servicio fue regular, podría mejorar.",2025-10-27,Servicios,6
+477,15,7111.41,94.31,20,42,móvil,10,1477,Entrega rápida y buen empaque.,2025-01-27,Electrónica,5
+478,16,7909.59,284.08,10,41,tienda_fisica,9,1478,Relación calidad-precio aceptable.,2025-04-23,Ropa,3
+479,26,5076.15,219.65,69,52,web,2,1479,"El servicio fue regular, podría mejorar.",2025-06-28,Ropa,6
+480,11,3639.94,124.85,97,68,web,8,1480,Entrega rápida y buen empaque.,2025-10-15,Servicios,5
+481,22,3492.77,135.37,83,32,tienda_fisica,1,1481,"El servicio fue regular, podría mejorar.",2025-12-16,Electrónica,6
+482,13,2603.08,367.51,4,67,móvil,14,1482,"El servicio fue regular, podría mejorar.",2025-07-11,Hogar,6
+483,16,486.32,451.18,25,42,tienda_fisica,9,1483,"Muy recomendable, volvería a comprar.",2025-02-12,Ropa,5
+484,21,701.44,341.76,100,28,web,14,1484,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-17,Servicios,9
+485,18,8296.05,441.75,95,56,móvil,11,1485,No estoy satisfecho con la compra.,2025-02-06,Electrónica,6
+486,15,7182.84,38.19,10,7,tienda_fisica,3,1486,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-09,Servicios,9
+487,30,2623.55,206.26,81,52,tienda_fisica,7,1487,No estoy satisfecho con la compra.,2025-06-11,Electrónica,6
+488,18,108.69,365.74,9,6,web,12,1488,"El servicio fue regular, podría mejorar.",2025-02-07,Hogar,6
+489,10,7879.57,164.65,12,37,móvil,13,1489,"El servicio fue regular, podría mejorar.",2025-08-13,Ropa,6
+490,16,1605.42,125.54,96,51,móvil,13,1490,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-07,Hogar,9
+491,22,8875.43,483.38,111,48,móvil,1,1491,Relación calidad-precio aceptable.,2025-10-11,Servicios,3
+492,2,100.05,306.39,69,71,tienda_fisica,2,1492,"El servicio fue regular, podría mejorar.",2025-06-06,Servicios,6
+493,14,9061.0,428.7,19,21,web,3,1493,No estoy satisfecho con la compra.,2025-04-24,Retail,6
+494,4,1854.51,403.84,110,7,tienda_fisica,14,1494,No estoy satisfecho con la compra.,2025-10-09,Retail,6
+495,10,6733.27,140.33,26,63,móvil,6,1495,"El servicio fue regular, podría mejorar.",2025-07-02,Ropa,6
+496,10,6214.18,452.06,41,63,web,8,1496,"El servicio fue regular, podría mejorar.",2025-06-18,Servicios,6
+497,19,5690.28,407.7,55,22,tienda_fisica,1,1497,Excelente atención y variedad de productos.,2025-06-10,Retail,6
+498,9,8409.1,84.47,94,43,web,15,1498,El producto llegó defectuoso.,2025-09-03,Servicios,4
+499,25,3089.44,284.8,23,11,móvil,14,1499,Entrega rápida y buen empaque.,2025-05-24,Hogar,5
+500,9,7348.77,320.78,94,10,web,15,1500,No estoy satisfecho con la compra.,2025-01-10,Ropa,6
+501,25,5920.86,455.03,71,34,tienda_fisica,9,1501,El producto llegó defectuoso.,2025-10-04,Electrónica,4
+502,13,2271.9,390.63,94,38,móvil,3,1502,Entrega rápida y buen empaque.,2025-08-26,Servicios,5
+503,13,3670.46,25.08,31,22,tienda_fisica,13,1503,"El servicio fue regular, podría mejorar.",2025-09-21,Ropa,6
+504,6,5685.25,291.59,112,19,web,12,1504,Excelente atención y variedad de productos.,2025-09-05,Hogar,6
+505,25,4902.04,50.17,48,30,móvil,1,1505,No estoy satisfecho con la compra.,2025-12-09,Electrónica,6
+506,13,4723.26,238.23,6,6,web,11,1506,Entrega rápida y buen empaque.,2025-06-15,Ropa,5
+507,27,7432.0,297.74,73,23,web,7,1507,Relación calidad-precio aceptable.,2025-12-01,Ropa,3
+508,17,2553.28,486.88,29,67,móvil,7,1508,"El servicio fue regular, podría mejorar.",2025-06-30,Retail,6
+509,29,6061.9,260.88,18,57,móvil,3,1509,"Muy recomendable, volvería a comprar.",2025-04-28,Hogar,5
+510,7,1544.89,95.53,78,16,web,11,1510,Relación calidad-precio aceptable.,2025-04-28,Ropa,3
+511,16,6768.53,249.93,76,21,móvil,11,1511,"El servicio fue regular, podría mejorar.",2025-07-30,Retail,6
+512,5,5756.19,97.34,81,66,web,1,1512,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-21,Servicios,9
+513,9,9228.35,267.99,52,3,web,15,1513,Excelente atención y variedad de productos.,2025-12-05,Electrónica,6
+514,15,6084.93,246.28,62,22,móvil,4,1514,No estoy satisfecho con la compra.,2025-07-30,Electrónica,6
+515,20,6613.51,146.97,93,44,tienda_fisica,15,1515,Excelente atención y variedad de productos.,2025-08-21,Servicios,6
+516,8,3813.2,83.46,3,26,tienda_fisica,9,1516,"El servicio fue regular, podría mejorar.",2025-09-16,Ropa,6
+517,20,1008.17,248.42,79,5,tienda_fisica,15,1517,Excelente atención y variedad de productos.,2025-09-30,Hogar,6
+518,16,6610.96,452.95,70,1,tienda_fisica,15,1518,"El servicio fue regular, podría mejorar.",2025-12-14,Electrónica,6
+519,12,8754.5,354.87,55,30,tienda_fisica,13,1519,El producto llegó defectuoso.,2025-09-04,Hogar,4
+520,14,1382.14,249.03,30,11,móvil,5,1520,"El servicio fue regular, podría mejorar.",2025-11-03,Retail,6
+521,7,104.42,376.95,1,67,tienda_fisica,2,1521,Relación calidad-precio aceptable.,2025-09-24,Hogar,3
+522,23,8052.66,216.25,14,20,web,7,1522,No estoy satisfecho con la compra.,2025-11-30,Hogar,6
+523,28,5384.24,291.04,79,36,tienda_fisica,11,1523,Relación calidad-precio aceptable.,2025-07-23,Retail,3
+524,6,3733.62,286.36,33,40,web,10,1524,"Muy recomendable, volvería a comprar.",2025-06-26,Hogar,5
+525,28,8645.11,77.16,30,58,tienda_fisica,13,1525,Excelente atención y variedad de productos.,2025-12-25,Hogar,6
+526,17,4035.58,182.45,71,7,web,3,1526,No estoy satisfecho con la compra.,2025-07-19,Electrónica,6
+527,27,1496.02,464.41,56,12,tienda_fisica,2,1527,"El servicio fue regular, podría mejorar.",2025-05-15,Electrónica,6
+528,20,425.67,204.48,52,67,web,5,1528,"El servicio fue regular, podría mejorar.",2025-12-31,Retail,6
+529,21,4968.97,25.14,109,67,tienda_fisica,5,1529,Excelente atención y variedad de productos.,2025-04-10,Electrónica,6
+530,20,1736.35,37.31,31,1,web,3,1530,No estoy satisfecho con la compra.,2025-02-14,Ropa,6
+531,22,3981.67,301.32,67,2,móvil,12,1531,Entrega rápida y buen empaque.,2025-12-27,Hogar,5
+532,24,8306.16,459.2,45,45,web,14,1532,Relación calidad-precio aceptable.,2025-05-22,Electrónica,3
+533,15,9300.65,295.96,34,23,web,7,1533,No estoy satisfecho con la compra.,2025-09-17,Ropa,6
+534,17,2977.81,474.57,103,66,web,5,1534,"El servicio fue regular, podría mejorar.",2025-10-03,Ropa,6
+535,13,5653.53,389.58,97,44,tienda_fisica,13,1535,"Muy recomendable, volvería a comprar.",2025-08-23,Retail,5
+536,16,1206.87,52.43,82,29,tienda_fisica,11,1536,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-26,Hogar,9
+537,12,5189.22,24.67,107,34,web,4,1537,El producto llegó defectuoso.,2025-05-28,Retail,4
+538,3,5567.79,105.67,41,46,web,4,1538,Entrega rápida y buen empaque.,2025-10-21,Hogar,5
+539,16,7384.27,132.73,31,34,móvil,4,1539,No estoy satisfecho con la compra.,2025-04-28,Servicios,6
+540,5,7800.44,77.54,11,64,web,10,1540,Entrega rápida y buen empaque.,2025-01-04,Servicios,5
+541,12,6225.64,256.32,113,36,tienda_fisica,8,1541,"Muy recomendable, volvería a comprar.",2025-04-04,Electrónica,5
+542,8,7514.19,81.56,68,55,tienda_fisica,8,1542,El producto llegó defectuoso.,2025-10-04,Retail,4
+543,13,8610.98,392.43,59,16,web,12,1543,Entrega rápida y buen empaque.,2025-09-23,Ropa,5
+544,1,6757.33,202.13,13,42,móvil,6,1544,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-10,Retail,9
+545,8,2730.61,480.09,44,47,móvil,3,1545,Relación calidad-precio aceptable.,2025-09-13,Servicios,3
+546,23,7534.35,195.24,52,36,móvil,8,1546,El producto llegó defectuoso.,2025-04-03,Servicios,4
+547,27,1043.7,149.58,31,72,tienda_fisica,7,1547,No estoy satisfecho con la compra.,2025-07-15,Servicios,6
+548,16,8066.4,104.77,64,18,web,15,1548,Excelente atención y variedad de productos.,2025-11-19,Servicios,6
+549,26,4891.87,140.47,110,7,tienda_fisica,7,1549,Entrega rápida y buen empaque.,2025-02-20,Ropa,5
+550,7,8147.49,248.74,81,13,tienda_fisica,8,1550,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-21,Servicios,9
+551,18,5597.04,408.81,45,3,móvil,7,1551,Entrega rápida y buen empaque.,2025-03-04,Retail,5
+552,19,5780.15,331.58,23,37,móvil,6,1552,No estoy satisfecho con la compra.,2025-06-16,Ropa,6
+553,25,7378.44,447.02,49,37,tienda_fisica,8,1553,"Muy recomendable, volvería a comprar.",2025-11-20,Ropa,5
+554,14,6331.17,294.39,109,10,web,2,1554,Entrega rápida y buen empaque.,2025-03-24,Servicios,5
+555,11,6547.48,361.01,78,51,móvil,5,1555,Entrega rápida y buen empaque.,2025-08-16,Servicios,5
+556,14,1714.82,430.02,17,31,móvil,11,1556,"Muy recomendable, volvería a comprar.",2025-05-09,Ropa,5
+557,6,4000.6,65.87,120,61,tienda_fisica,9,1557,No estoy satisfecho con la compra.,2025-01-28,Electrónica,6
+558,4,2661.4,94.53,84,50,web,5,1558,"El servicio fue regular, podría mejorar.",2025-04-28,Hogar,6
+559,21,1307.8,272.84,22,4,web,1,1559,"Muy recomendable, volvería a comprar.",2025-12-06,Retail,5
+560,15,9751.07,279.48,35,71,móvil,8,1560,"Muy recomendable, volvería a comprar.",2025-03-11,Retail,5
+561,19,5995.96,322.9,82,56,tienda_fisica,9,1561,Excelente atención y variedad de productos.,2025-11-24,Ropa,6
+562,30,3504.32,279.04,104,12,tienda_fisica,8,1562,Relación calidad-precio aceptable.,2025-06-07,Ropa,3
+563,5,3070.55,20.04,105,18,móvil,6,1563,Relación calidad-precio aceptable.,2025-05-27,Hogar,3
+564,23,9224.78,474.54,62,39,móvil,1,1564,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-09,Ropa,9
+565,26,121.82,199.35,53,72,móvil,7,1565,No estoy satisfecho con la compra.,2025-07-22,Ropa,6
+566,27,3814.66,146.23,55,31,web,9,1566,El producto llegó defectuoso.,2025-11-10,Servicios,4
+567,21,7442.12,408.23,53,25,tienda_fisica,14,1567,Relación calidad-precio aceptable.,2025-02-05,Retail,3
+568,4,6387.08,316.51,35,63,web,4,1568,Relación calidad-precio aceptable.,2025-06-14,Servicios,3
+569,18,270.2,486.72,37,35,web,3,1569,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-13,Servicios,9
+570,3,1549.3,256.92,44,54,tienda_fisica,5,1570,No estoy satisfecho con la compra.,2025-09-13,Electrónica,6
+571,11,848.22,380.27,19,8,móvil,5,1571,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-20,Hogar,9
+572,6,1962.31,423.94,105,49,web,14,1572,"Muy recomendable, volvería a comprar.",2025-01-07,Ropa,5
+573,25,9750.97,138.64,5,26,web,8,1573,El producto llegó defectuoso.,2025-02-18,Servicios,4
+574,13,6830.35,169.81,42,21,tienda_fisica,11,1574,"Muy recomendable, volvería a comprar.",2025-01-22,Servicios,5
+575,9,4838.23,163.43,47,7,tienda_fisica,14,1575,"El servicio fue regular, podría mejorar.",2025-12-08,Ropa,6
+576,21,4369.91,27.23,102,36,web,10,1576,No estoy satisfecho con la compra.,2025-03-03,Electrónica,6
+577,2,5831.72,351.56,89,20,móvil,6,1577,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-15,Servicios,9
+578,3,6875.15,182.44,98,8,web,1,1578,"Muy recomendable, volvería a comprar.",2025-07-02,Servicios,5
+579,5,4904.04,172.03,72,45,tienda_fisica,13,1579,"El servicio fue regular, podría mejorar.",2025-08-13,Servicios,6
+580,23,3808.8,367.71,33,6,tienda_fisica,8,1580,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-28,Servicios,9
+581,18,6985.53,111.09,24,70,móvil,6,1581,Relación calidad-precio aceptable.,2025-06-15,Ropa,3
+582,28,8321.93,458.95,71,21,tienda_fisica,2,1582,Relación calidad-precio aceptable.,2025-09-29,Hogar,3
+583,27,2670.33,196.21,1,65,web,7,1583,Relación calidad-precio aceptable.,2025-04-05,Hogar,3
+584,25,6220.96,173.93,9,69,web,14,1584,Entrega rápida y buen empaque.,2025-07-18,Ropa,5
+585,25,5537.1,314.26,42,53,web,11,1585,"Muy recomendable, volvería a comprar.",2025-06-14,Ropa,5
+586,2,8360.17,82.29,112,5,web,4,1586,"El servicio fue regular, podría mejorar.",2025-02-24,Electrónica,6
+587,2,5731.57,421.42,85,63,móvil,9,1587,"El servicio fue regular, podría mejorar.",2025-11-16,Servicios,6
+588,2,3695.22,310.86,10,2,tienda_fisica,15,1588,Relación calidad-precio aceptable.,2025-04-17,Ropa,3
+589,15,8020.15,49.14,72,54,tienda_fisica,14,1589,"El servicio fue regular, podría mejorar.",2025-07-08,Hogar,6
+590,17,454.5,53.79,39,10,tienda_fisica,4,1590,Relación calidad-precio aceptable.,2025-09-23,Electrónica,3
+591,18,3884.04,112.7,85,32,web,10,1591,No estoy satisfecho con la compra.,2025-11-17,Electrónica,6
+592,24,1099.87,326.54,46,59,web,12,1592,El producto llegó defectuoso.,2025-12-07,Ropa,4
+593,26,1844.95,212.75,44,21,móvil,9,1593,Excelente atención y variedad de productos.,2025-11-04,Electrónica,6
+594,18,9915.06,175.83,48,53,móvil,13,1594,Entrega rápida y buen empaque.,2025-11-21,Retail,5
+595,19,5478.98,200.03,71,33,móvil,6,1595,No estoy satisfecho con la compra.,2025-08-20,Retail,6
+596,24,394.9,156.55,3,67,móvil,3,1596,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-04,Hogar,9
+597,7,8564.42,30.42,106,36,web,15,1597,No estoy satisfecho con la compra.,2025-10-11,Retail,6
+598,4,425.48,190.71,18,34,tienda_fisica,6,1598,Excelente atención y variedad de productos.,2025-10-26,Ropa,6
+599,26,3038.01,293.83,73,28,web,12,1599,Relación calidad-precio aceptable.,2025-02-09,Servicios,3
+600,6,4908.35,451.53,90,13,tienda_fisica,10,1600,"Muy recomendable, volvería a comprar.",2025-11-25,Retail,5
+601,3,7812.21,462.5,43,45,móvil,15,1601,El producto llegó defectuoso.,2025-08-11,Electrónica,4
+602,24,6545.15,309.1,2,49,móvil,1,1602,No estoy satisfecho con la compra.,2025-06-06,Electrónica,6
+603,18,5670.88,176.88,90,29,tienda_fisica,3,1603,Entrega rápida y buen empaque.,2025-01-26,Electrónica,5
+604,25,5971.57,262.27,29,56,tienda_fisica,5,1604,"Muy recomendable, volvería a comprar.",2025-07-21,Hogar,5
+605,3,4784.75,377.75,71,52,web,5,1605,Entrega rápida y buen empaque.,2025-02-13,Servicios,5
+606,25,6993.81,385.78,62,72,móvil,4,1606,El producto llegó defectuoso.,2025-09-07,Ropa,4
+607,18,6179.17,373.12,32,32,móvil,2,1607,No estoy satisfecho con la compra.,2025-05-17,Ropa,6
+608,4,6733.89,223.3,45,25,móvil,6,1608,"El servicio fue regular, podría mejorar.",2025-06-26,Retail,6
+609,6,9877.14,315.79,103,57,tienda_fisica,10,1609,Relación calidad-precio aceptable.,2025-03-16,Electrónica,3
+610,7,6869.32,94.88,94,11,móvil,2,1610,No estoy satisfecho con la compra.,2025-01-28,Electrónica,6
+611,28,8332.83,158.09,44,15,web,5,1611,Excelente atención y variedad de productos.,2025-08-19,Ropa,6
+612,7,7413.13,121.7,70,67,móvil,13,1612,Entrega rápida y buen empaque.,2025-05-13,Electrónica,5
+613,23,7002.61,28.83,75,68,tienda_fisica,1,1613,Excelente atención y variedad de productos.,2025-05-11,Hogar,6
+614,7,7902.43,316.62,7,60,web,11,1614,Relación calidad-precio aceptable.,2025-01-05,Electrónica,3
+615,22,8528.23,336.85,111,14,web,1,1615,Relación calidad-precio aceptable.,2025-05-30,Hogar,3
+616,13,5109.98,360.65,116,41,tienda_fisica,8,1616,No estoy satisfecho con la compra.,2025-11-02,Hogar,6
+617,7,5031.48,239.83,119,3,tienda_fisica,1,1617,Excelente atención y variedad de productos.,2025-05-07,Electrónica,6
+618,16,3964.33,95.36,45,46,tienda_fisica,6,1618,Entrega rápida y buen empaque.,2025-11-17,Retail,5
+619,26,667.0,143.69,50,4,móvil,9,1619,Relación calidad-precio aceptable.,2025-05-24,Servicios,3
+620,29,3958.82,85.89,94,49,web,9,1620,Entrega rápida y buen empaque.,2025-12-14,Servicios,5
+621,8,5750.34,224.7,40,43,tienda_fisica,8,1621,El producto llegó defectuoso.,2025-10-05,Servicios,4
+622,19,5436.47,404.05,111,18,web,5,1622,Excelente atención y variedad de productos.,2025-12-19,Servicios,6
+623,14,9957.07,488.37,19,21,tienda_fisica,6,1623,Excelente atención y variedad de productos.,2025-02-04,Ropa,6
+624,6,3210.1,442.23,94,4,tienda_fisica,13,1624,"El servicio fue regular, podría mejorar.",2025-06-13,Ropa,6
+625,15,7468.82,414.42,82,36,móvil,3,1625,Relación calidad-precio aceptable.,2025-04-07,Hogar,3
+626,1,7636.35,313.75,35,30,web,10,1626,Excelente atención y variedad de productos.,2025-04-29,Servicios,6
+627,3,6897.01,248.77,65,61,web,12,1627,Entrega rápida y buen empaque.,2025-11-29,Electrónica,5
+628,16,4764.78,98.62,29,5,móvil,7,1628,El producto llegó defectuoso.,2025-01-08,Servicios,4
+629,24,6729.82,117.36,27,9,móvil,3,1629,No estoy satisfecho con la compra.,2025-08-13,Hogar,6
+630,28,4602.57,138.46,52,6,tienda_fisica,10,1630,Entrega rápida y buen empaque.,2025-07-14,Hogar,5
+631,20,9394.43,294.53,69,68,tienda_fisica,11,1631,El producto llegó defectuoso.,2025-12-27,Retail,4
+632,15,4596.16,441.33,113,32,web,9,1632,"El servicio fue regular, podría mejorar.",2025-10-03,Ropa,6
+633,17,7663.34,482.04,25,38,móvil,8,1633,El producto llegó defectuoso.,2025-07-23,Electrónica,4
+634,6,4253.5,314.3,7,67,móvil,15,1634,"Muy recomendable, volvería a comprar.",2025-03-14,Retail,5
+635,24,5031.55,106.29,75,70,móvil,3,1635,"El servicio fue regular, podría mejorar.",2025-07-21,Hogar,6
+636,1,1829.84,303.35,92,26,móvil,15,1636,"Muy recomendable, volvería a comprar.",2025-08-21,Retail,5
+637,23,6503.34,361.51,21,16,web,2,1637,Entrega rápida y buen empaque.,2025-02-28,Retail,5
+638,3,5261.98,204.36,102,66,tienda_fisica,10,1638,Entrega rápida y buen empaque.,2025-03-23,Hogar,5
+639,2,7694.19,457.88,73,20,móvil,3,1639,El producto llegó defectuoso.,2025-03-16,Ropa,4
+640,10,3129.71,388.94,58,37,web,11,1640,El producto llegó defectuoso.,2025-04-03,Electrónica,4
+641,1,6244.48,141.49,59,64,web,14,1641,No estoy satisfecho con la compra.,2025-09-13,Servicios,6
+642,8,2207.89,336.55,59,53,tienda_fisica,8,1642,"Muy recomendable, volvería a comprar.",2025-02-10,Electrónica,5
+643,8,8827.57,153.49,81,72,tienda_fisica,14,1643,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-17,Ropa,9
+644,2,6550.1,37.63,110,5,web,11,1644,Excelente atención y variedad de productos.,2025-10-23,Servicios,6
+645,30,922.64,72.27,23,21,tienda_fisica,11,1645,Entrega rápida y buen empaque.,2025-05-26,Retail,5
+646,15,7505.88,192.89,5,12,tienda_fisica,13,1646,Excelente atención y variedad de productos.,2025-06-03,Ropa,6
+647,27,723.28,225.12,71,9,móvil,5,1647,El producto llegó defectuoso.,2025-08-30,Retail,4
+648,11,5294.17,271.83,90,27,web,10,1648,Relación calidad-precio aceptable.,2025-01-30,Electrónica,3
+649,16,7254.54,310.29,101,37,web,7,1649,"El servicio fue regular, podría mejorar.",2025-11-08,Ropa,6
+650,30,1340.65,290.06,67,64,móvil,8,1650,Entrega rápida y buen empaque.,2025-04-03,Retail,5
+651,7,65.73,31.51,81,16,tienda_fisica,12,1651,Relación calidad-precio aceptable.,2025-04-17,Servicios,3
+652,2,3371.23,289.0,82,28,tienda_fisica,1,1652,El producto llegó defectuoso.,2025-11-24,Hogar,4
+653,26,724.97,164.14,71,42,web,13,1653,Relación calidad-precio aceptable.,2025-01-04,Retail,3
+654,13,7257.75,315.68,4,23,web,4,1654,Entrega rápida y buen empaque.,2025-06-19,Retail,5
+655,26,403.8,85.16,20,59,móvil,15,1655,"Muy recomendable, volvería a comprar.",2025-10-02,Hogar,5
+656,30,7438.72,420.85,39,41,móvil,9,1656,El producto llegó defectuoso.,2025-10-02,Hogar,4
+657,26,9166.06,401.98,9,20,web,5,1657,Entrega rápida y buen empaque.,2025-01-16,Servicios,5
+658,19,6076.61,109.94,15,40,móvil,12,1658,Excelente atención y variedad de productos.,2025-06-11,Hogar,6
+659,14,913.64,440.98,48,58,tienda_fisica,14,1659,Relación calidad-precio aceptable.,2025-06-04,Electrónica,3
+660,6,1166.7,396.77,100,26,web,15,1660,Relación calidad-precio aceptable.,2025-02-17,Ropa,3
+661,26,4852.5,260.03,25,44,móvil,15,1661,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-05,Ropa,9
+662,25,3307.01,389.35,13,67,tienda_fisica,11,1662,Relación calidad-precio aceptable.,2025-03-09,Ropa,3
+663,13,7151.09,270.73,1,40,web,15,1663,"Muy recomendable, volvería a comprar.",2025-01-23,Electrónica,5
+664,11,4695.42,42.15,67,40,tienda_fisica,1,1664,"El servicio fue regular, podría mejorar.",2025-10-23,Ropa,6
+665,7,1965.83,152.79,41,57,móvil,11,1665,Entrega rápida y buen empaque.,2025-03-02,Servicios,5
+666,9,1188.88,479.98,72,66,móvil,2,1666,Excelente atención y variedad de productos.,2025-04-16,Servicios,6
+667,9,1458.49,358.09,37,32,tienda_fisica,3,1667,Entrega rápida y buen empaque.,2025-02-06,Retail,5
+668,18,4464.29,82.44,61,7,móvil,2,1668,Entrega rápida y buen empaque.,2025-07-16,Ropa,5
+669,13,1830.88,306.14,76,58,web,10,1669,El producto llegó defectuoso.,2025-07-02,Electrónica,4
+670,23,7596.11,408.46,11,60,móvil,10,1670,No estoy satisfecho con la compra.,2025-03-09,Retail,6
+671,15,3138.4,329.32,99,60,web,8,1671,"El servicio fue regular, podría mejorar.",2025-04-29,Hogar,6
+672,30,3666.32,108.01,118,43,web,13,1672,Relación calidad-precio aceptable.,2025-06-16,Servicios,3
+673,3,4779.58,188.69,60,22,móvil,5,1673,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-28,Hogar,9
+674,17,1074.18,412.43,102,14,tienda_fisica,6,1674,Excelente atención y variedad de productos.,2025-10-12,Ropa,6
+675,18,4636.7,303.46,31,32,tienda_fisica,9,1675,Relación calidad-precio aceptable.,2025-03-23,Electrónica,3
+676,11,2121.97,353.15,56,56,móvil,10,1676,"El servicio fue regular, podría mejorar.",2025-06-25,Hogar,6
+677,22,6712.57,374.9,92,63,tienda_fisica,2,1677,Excelente atención y variedad de productos.,2025-10-31,Servicios,6
+678,18,1021.66,233.7,40,52,tienda_fisica,2,1678,Entrega rápida y buen empaque.,2025-11-03,Hogar,5
+679,11,4968.24,336.88,12,28,web,14,1679,El producto llegó defectuoso.,2025-03-13,Ropa,4
+680,22,1534.7,275.0,50,58,tienda_fisica,4,1680,Excelente atención y variedad de productos.,2025-04-16,Electrónica,6
+681,19,7953.75,346.19,118,56,tienda_fisica,12,1681,Relación calidad-precio aceptable.,2025-06-26,Retail,3
+682,20,9864.9,214.01,17,38,web,1,1682,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-09,Ropa,9
+683,23,5622.3,489.77,15,37,tienda_fisica,14,1683,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-16,Electrónica,9
+684,21,3215.37,203.74,49,56,web,9,1684,El producto llegó defectuoso.,2025-04-19,Hogar,4
+685,5,1922.86,204.61,119,47,tienda_fisica,14,1685,"Muy recomendable, volvería a comprar.",2025-08-02,Servicios,5
+686,5,165.45,331.23,19,63,web,11,1686,Excelente atención y variedad de productos.,2025-08-12,Retail,6
+687,21,8069.12,432.87,115,55,web,10,1687,Excelente atención y variedad de productos.,2025-04-03,Electrónica,6
+688,18,8209.71,204.66,29,24,móvil,7,1688,El producto llegó defectuoso.,2025-11-06,Ropa,4
+689,28,7322.59,361.82,35,53,web,15,1689,"Muy recomendable, volvería a comprar.",2025-10-07,Ropa,5
+690,2,5703.09,358.34,15,62,tienda_fisica,12,1690,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-10,Retail,9
+691,15,5193.65,271.21,79,12,web,4,1691,Relación calidad-precio aceptable.,2025-08-30,Ropa,3
+692,20,575.1,184.9,100,2,tienda_fisica,8,1692,Relación calidad-precio aceptable.,2025-08-21,Electrónica,3
+693,14,3561.5,489.33,38,38,tienda_fisica,3,1693,Entrega rápida y buen empaque.,2025-01-19,Hogar,5
+694,24,7860.96,145.01,81,61,tienda_fisica,10,1694,Relación calidad-precio aceptable.,2025-03-28,Ropa,3
+695,26,7386.93,33.1,63,11,tienda_fisica,3,1695,Relación calidad-precio aceptable.,2025-09-16,Electrónica,3
+696,5,6177.19,152.1,33,2,web,12,1696,Relación calidad-precio aceptable.,2025-02-27,Retail,3
+697,22,4494.2,407.76,34,31,tienda_fisica,8,1697,Excelente atención y variedad de productos.,2025-04-03,Servicios,6
+698,3,9675.09,305.86,106,20,tienda_fisica,14,1698,Entrega rápida y buen empaque.,2025-09-11,Electrónica,5
+699,22,4429.84,326.04,27,45,móvil,1,1699,No estoy satisfecho con la compra.,2025-11-25,Hogar,6
+700,6,4666.95,248.59,61,69,móvil,4,1700,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-14,Electrónica,9
+701,9,1494.24,437.73,2,37,tienda_fisica,15,1701,"Muy recomendable, volvería a comprar.",2025-08-18,Hogar,5
+702,4,9181.24,325.96,109,56,móvil,10,1702,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-30,Retail,9
+703,9,8033.05,142.57,75,51,móvil,8,1703,Relación calidad-precio aceptable.,2025-12-12,Retail,3
+704,17,3407.2,351.33,24,41,tienda_fisica,9,1704,No estoy satisfecho con la compra.,2025-01-06,Servicios,6
+705,1,4141.93,272.13,88,58,tienda_fisica,6,1705,"El servicio fue regular, podría mejorar.",2025-04-23,Electrónica,6
+706,7,388.72,317.31,8,28,tienda_fisica,10,1706,Relación calidad-precio aceptable.,2025-11-23,Retail,3
+707,28,6066.62,200.46,98,24,web,15,1707,"El servicio fue regular, podría mejorar.",2025-02-26,Electrónica,6
+708,10,4696.21,469.37,82,59,tienda_fisica,15,1708,Relación calidad-precio aceptable.,2025-05-22,Servicios,3
+709,6,7818.28,153.1,8,49,móvil,7,1709,Relación calidad-precio aceptable.,2025-06-20,Retail,3
+710,6,4433.72,256.03,119,26,web,10,1710,Relación calidad-precio aceptable.,2025-07-21,Retail,3
+711,5,5429.29,227.0,79,14,web,15,1711,"El servicio fue regular, podría mejorar.",2025-08-15,Hogar,6
+712,2,775.55,294.25,33,58,tienda_fisica,1,1712,"El servicio fue regular, podría mejorar.",2025-09-12,Retail,6
+713,22,3935.31,92.77,43,51,web,10,1713,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-02,Electrónica,9
+714,14,4068.93,369.33,104,9,tienda_fisica,9,1714,"Muy recomendable, volvería a comprar.",2025-04-26,Hogar,5
+715,4,5694.08,468.82,46,43,web,11,1715,"Muy recomendable, volvería a comprar.",2025-06-05,Hogar,5
+716,12,5369.53,481.24,11,59,móvil,13,1716,"El servicio fue regular, podría mejorar.",2025-05-29,Electrónica,6
+717,18,441.35,204.4,25,39,tienda_fisica,12,1717,Excelente atención y variedad de productos.,2025-07-19,Servicios,6
+718,3,8857.88,230.23,25,18,web,1,1718,"Muy recomendable, volvería a comprar.",2025-04-09,Retail,5
+719,16,3918.24,400.51,83,40,web,8,1719,No estoy satisfecho con la compra.,2025-10-01,Ropa,6
+720,11,607.74,398.13,6,52,móvil,2,1720,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-19,Electrónica,9
+721,22,8708.49,277.55,95,30,tienda_fisica,15,1721,"Muy recomendable, volvería a comprar.",2025-02-06,Ropa,5
+722,21,239.68,455.45,80,6,web,4,1722,"Muy recomendable, volvería a comprar.",2025-12-26,Servicios,5
+723,6,6344.98,454.24,106,13,tienda_fisica,8,1723,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-09,Servicios,9
+724,27,8183.83,74.81,77,29,web,2,1724,"El servicio fue regular, podría mejorar.",2025-04-14,Ropa,6
+725,11,1251.98,348.36,70,18,móvil,6,1725,El producto llegó defectuoso.,2025-04-20,Retail,4
+726,11,679.06,151.47,97,54,web,3,1726,Excelente atención y variedad de productos.,2025-12-23,Ropa,6
+727,15,2474.26,299.35,18,13,móvil,13,1727,Excelente atención y variedad de productos.,2025-11-20,Ropa,6
+728,1,8802.29,58.75,1,23,tienda_fisica,15,1728,Excelente atención y variedad de productos.,2025-02-15,Hogar,6
+729,14,6950.36,400.28,61,17,tienda_fisica,4,1729,Relación calidad-precio aceptable.,2025-03-15,Ropa,3
+730,14,2430.57,103.78,89,5,tienda_fisica,10,1730,"Muy recomendable, volvería a comprar.",2025-04-03,Retail,5
+731,21,8273.51,164.58,54,1,tienda_fisica,9,1731,"El servicio fue regular, podría mejorar.",2025-05-01,Hogar,6
+732,20,3650.92,385.34,70,65,web,4,1732,"El servicio fue regular, podría mejorar.",2025-08-26,Electrónica,6
+733,2,1977.5,402.37,88,61,tienda_fisica,8,1733,Relación calidad-precio aceptable.,2025-04-01,Servicios,3
+734,21,3673.72,120.6,33,43,web,10,1734,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-21,Electrónica,9
+735,30,5396.74,95.86,4,63,web,9,1735,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-01,Electrónica,9
+736,19,5818.63,221.15,96,42,web,4,1736,"Muy recomendable, volvería a comprar.",2025-02-26,Servicios,5
+737,8,7390.59,437.55,49,29,móvil,2,1737,"El servicio fue regular, podría mejorar.",2025-08-30,Servicios,6
+738,29,4386.86,123.76,79,59,tienda_fisica,3,1738,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-18,Hogar,9
+739,24,1981.84,192.12,35,26,móvil,6,1739,"Muy recomendable, volvería a comprar.",2025-03-07,Servicios,5
+740,9,1408.19,428.79,59,54,web,3,1740,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-25,Ropa,9
+741,26,7955.93,477.32,116,22,web,10,1741,Excelente atención y variedad de productos.,2025-10-11,Retail,6
+742,28,5241.6,433.86,28,61,web,14,1742,El producto llegó defectuoso.,2025-08-25,Electrónica,4
+743,24,8732.35,138.96,56,29,móvil,15,1743,El producto llegó defectuoso.,2025-10-30,Electrónica,4
+744,14,9802.83,39.23,61,65,web,1,1744,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-06,Ropa,9
+745,26,7990.27,414.22,58,64,tienda_fisica,4,1745,"Muy recomendable, volvería a comprar.",2025-02-12,Hogar,5
+746,7,1370.48,161.98,83,12,tienda_fisica,1,1746,El producto llegó defectuoso.,2025-09-03,Electrónica,4
+747,23,4619.86,293.78,75,4,tienda_fisica,8,1747,Excelente atención y variedad de productos.,2025-08-26,Retail,6
+748,26,8721.94,320.87,91,1,web,14,1748,Excelente atención y variedad de productos.,2025-11-18,Hogar,6
+749,17,375.51,224.43,35,70,web,10,1749,Entrega rápida y buen empaque.,2025-04-17,Hogar,5
+750,24,9325.82,267.07,117,47,tienda_fisica,15,1750,Entrega rápida y buen empaque.,2025-01-27,Electrónica,5
+751,15,6210.38,195.47,23,72,web,12,1751,Entrega rápida y buen empaque.,2025-02-04,Hogar,5
+752,11,2424.4,74.51,62,27,tienda_fisica,13,1752,Excelente atención y variedad de productos.,2025-04-26,Servicios,6
+753,17,6818.26,153.03,9,48,móvil,6,1753,Relación calidad-precio aceptable.,2025-08-20,Retail,3
+754,16,7112.76,345.59,69,38,móvil,8,1754,"El servicio fue regular, podría mejorar.",2025-11-14,Ropa,6
+755,29,8845.59,61.91,51,23,móvil,5,1755,No estoy satisfecho con la compra.,2025-02-09,Electrónica,6
+756,4,6985.97,258.24,112,27,web,9,1756,Relación calidad-precio aceptable.,2025-11-18,Servicios,3
+757,22,5437.28,83.37,45,54,web,8,1757,El producto llegó defectuoso.,2025-11-27,Retail,4
+758,3,269.26,404.95,107,67,web,11,1758,No estoy satisfecho con la compra.,2025-06-21,Retail,6
+759,21,6478.21,176.63,76,68,móvil,14,1759,Entrega rápida y buen empaque.,2025-10-08,Ropa,5
+760,19,1362.94,398.89,22,34,móvil,4,1760,Relación calidad-precio aceptable.,2025-09-05,Hogar,3
+761,5,3563.55,238.84,22,21,móvil,12,1761,"Buen producto, la calidad es excelente y llegó rápido.",2025-10-02,Retail,9
+762,27,7095.71,454.26,102,20,móvil,3,1762,Excelente atención y variedad de productos.,2025-05-02,Servicios,6
+763,19,1308.41,145.0,24,27,web,9,1763,Entrega rápida y buen empaque.,2025-12-29,Electrónica,5
+764,5,3760.5,279.14,21,69,web,5,1764,Entrega rápida y buen empaque.,2025-03-04,Retail,5
+765,25,1496.57,239.86,41,20,web,1,1765,"Muy recomendable, volvería a comprar.",2025-10-07,Hogar,5
+766,16,8964.98,485.41,97,19,tienda_fisica,13,1766,Relación calidad-precio aceptable.,2025-10-17,Retail,3
+767,23,1167.54,249.91,6,18,tienda_fisica,11,1767,Entrega rápida y buen empaque.,2025-10-10,Hogar,5
+768,13,6194.34,125.78,46,12,web,6,1768,"Buen producto, la calidad es excelente y llegó rápido.",2025-01-29,Retail,9
+769,26,9359.87,153.41,3,11,tienda_fisica,9,1769,No estoy satisfecho con la compra.,2025-08-17,Servicios,6
+770,7,4930.13,309.52,66,8,tienda_fisica,15,1770,El producto llegó defectuoso.,2025-12-08,Electrónica,4
+771,23,8545.35,197.42,48,2,móvil,5,1771,Excelente atención y variedad de productos.,2025-06-26,Hogar,6
+772,28,5632.28,123.53,114,57,móvil,12,1772,"Muy recomendable, volvería a comprar.",2025-08-01,Retail,5
+773,26,7293.61,450.91,94,54,móvil,3,1773,Excelente atención y variedad de productos.,2025-10-28,Retail,6
+774,7,3067.15,494.42,68,43,tienda_fisica,2,1774,Excelente atención y variedad de productos.,2025-10-30,Electrónica,6
+775,14,6406.12,151.2,23,72,móvil,8,1775,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-30,Electrónica,9
+776,6,8331.22,158.94,63,6,tienda_fisica,14,1776,No estoy satisfecho con la compra.,2025-06-04,Servicios,6
+777,18,7411.57,127.77,102,1,tienda_fisica,3,1777,"Muy recomendable, volvería a comprar.",2025-05-15,Retail,5
+778,21,6675.84,158.09,23,63,móvil,15,1778,"El servicio fue regular, podría mejorar.",2025-12-19,Hogar,6
+779,4,7658.95,256.66,9,47,tienda_fisica,10,1779,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-04,Servicios,9
+780,21,6874.83,487.64,105,16,tienda_fisica,6,1780,Relación calidad-precio aceptable.,2025-09-20,Hogar,3
+781,28,2632.39,299.19,19,41,tienda_fisica,8,1781,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-21,Ropa,9
+782,2,2763.07,221.37,117,46,web,1,1782,Excelente atención y variedad de productos.,2025-05-29,Retail,6
+783,17,1978.46,321.45,98,13,móvil,10,1783,"El servicio fue regular, podría mejorar.",2025-03-27,Ropa,6
+784,27,8457.7,403.94,35,47,tienda_fisica,2,1784,Entrega rápida y buen empaque.,2025-10-01,Retail,5
+785,1,1412.65,155.08,100,63,tienda_fisica,7,1785,Excelente atención y variedad de productos.,2025-06-24,Retail,6
+786,5,5058.66,419.16,102,72,web,10,1786,No estoy satisfecho con la compra.,2025-12-20,Electrónica,6
+787,14,4631.89,56.67,105,17,tienda_fisica,15,1787,"El servicio fue regular, podría mejorar.",2025-01-09,Ropa,6
+788,23,3657.56,412.18,114,67,móvil,13,1788,Relación calidad-precio aceptable.,2025-06-25,Retail,3
+789,24,8155.01,126.73,110,19,web,12,1789,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-27,Retail,9
+790,5,9812.04,223.91,98,15,móvil,2,1790,No estoy satisfecho con la compra.,2025-01-10,Servicios,6
+791,7,1122.78,400.67,66,8,móvil,8,1791,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-02,Hogar,9
+792,10,6692.48,382.18,101,16,móvil,15,1792,"El servicio fue regular, podría mejorar.",2025-11-05,Electrónica,6
+793,6,6722.48,34.04,19,36,web,10,1793,No estoy satisfecho con la compra.,2025-06-28,Ropa,6
+794,17,5723.84,67.57,75,2,móvil,9,1794,No estoy satisfecho con la compra.,2025-04-22,Servicios,6
+795,6,9021.52,277.82,93,13,tienda_fisica,15,1795,Relación calidad-precio aceptable.,2025-04-20,Servicios,3
+796,23,5914.34,231.04,14,24,tienda_fisica,14,1796,Entrega rápida y buen empaque.,2025-07-01,Hogar,5
+797,17,2314.16,74.17,41,16,móvil,8,1797,No estoy satisfecho con la compra.,2025-02-26,Hogar,6
+798,25,3644.44,158.37,93,6,tienda_fisica,2,1798,"Muy recomendable, volvería a comprar.",2025-06-17,Servicios,5
+799,10,4596.61,373.36,88,57,móvil,4,1799,El producto llegó defectuoso.,2025-10-11,Electrónica,4
+800,7,8574.9,449.48,103,61,móvil,11,1800,El producto llegó defectuoso.,2025-07-08,Retail,4
+801,22,1096.46,230.27,85,11,web,2,1801,"Muy recomendable, volvería a comprar.",2025-03-15,Electrónica,5
+802,24,9256.64,489.37,9,47,móvil,4,1802,"El servicio fue regular, podría mejorar.",2025-06-23,Hogar,6
+803,4,2367.05,223.86,64,36,web,13,1803,El producto llegó defectuoso.,2026-01-01,Ropa,4
+804,25,7905.45,329.04,52,46,tienda_fisica,8,1804,Relación calidad-precio aceptable.,2025-12-08,Ropa,3
+805,17,2824.96,388.64,14,16,tienda_fisica,5,1805,"Muy recomendable, volvería a comprar.",2025-09-08,Hogar,5
+806,1,1041.05,45.37,9,64,móvil,11,1806,Excelente atención y variedad de productos.,2025-01-14,Servicios,6
+807,5,3062.39,319.15,98,10,web,11,1807,Entrega rápida y buen empaque.,2025-09-24,Hogar,5
+808,10,6637.83,255.32,34,70,móvil,6,1808,No estoy satisfecho con la compra.,2025-10-04,Hogar,6
+809,14,8807.25,77.18,58,41,tienda_fisica,14,1809,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-12,Electrónica,9
+810,2,1809.85,336.52,100,39,móvil,15,1810,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-28,Hogar,9
+811,5,3158.97,206.76,98,15,web,10,1811,El producto llegó defectuoso.,2025-12-12,Hogar,4
+812,16,5644.44,95.03,8,51,móvil,5,1812,"Muy recomendable, volvería a comprar.",2025-09-11,Ropa,5
+813,25,9778.94,173.83,4,6,tienda_fisica,3,1813,Entrega rápida y buen empaque.,2025-07-07,Hogar,5
+814,25,8918.86,183.8,13,55,móvil,6,1814,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-02,Ropa,9
+815,22,2480.08,132.62,40,11,móvil,15,1815,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-19,Retail,9
+816,11,1739.3,278.44,5,59,web,11,1816,"El servicio fue regular, podría mejorar.",2025-08-05,Retail,6
+817,9,253.0,245.46,3,41,tienda_fisica,7,1817,El producto llegó defectuoso.,2025-10-20,Ropa,4
+818,26,4909.17,351.61,27,44,móvil,8,1818,"El servicio fue regular, podría mejorar.",2025-09-15,Retail,6
+819,20,3030.23,485.33,26,64,tienda_fisica,11,1819,Excelente atención y variedad de productos.,2025-02-08,Retail,6
+820,9,522.94,498.19,52,29,tienda_fisica,10,1820,Relación calidad-precio aceptable.,2025-02-17,Servicios,3
+821,19,3401.54,52.29,103,68,tienda_fisica,8,1821,"El servicio fue regular, podría mejorar.",2025-08-07,Ropa,6
+822,21,8246.2,262.23,39,56,web,11,1822,"El servicio fue regular, podría mejorar.",2025-10-04,Retail,6
+823,13,2550.08,267.38,86,71,móvil,3,1823,El producto llegó defectuoso.,2025-01-10,Servicios,4
+824,19,5017.08,337.19,106,60,tienda_fisica,5,1824,Excelente atención y variedad de productos.,2025-11-23,Ropa,6
+825,30,5682.86,320.84,67,26,tienda_fisica,6,1825,El producto llegó defectuoso.,2025-08-25,Ropa,4
+826,24,6868.8,164.13,56,53,web,6,1826,Excelente atención y variedad de productos.,2025-02-02,Servicios,6
+827,9,8245.92,330.1,33,31,tienda_fisica,7,1827,El producto llegó defectuoso.,2025-05-03,Servicios,4
+828,1,2493.59,417.07,60,63,web,9,1828,No estoy satisfecho con la compra.,2025-08-12,Servicios,6
+829,6,2763.48,33.99,102,36,móvil,11,1829,No estoy satisfecho con la compra.,2025-10-09,Electrónica,6
+830,26,248.09,432.6,11,41,web,10,1830,"Muy recomendable, volvería a comprar.",2025-06-02,Electrónica,5
+831,22,6591.43,63.35,108,18,web,4,1831,Entrega rápida y buen empaque.,2025-02-27,Hogar,5
+832,17,6658.96,298.6,100,68,tienda_fisica,5,1832,"El servicio fue regular, podría mejorar.",2025-09-12,Ropa,6
+833,25,8076.54,178.06,75,50,web,13,1833,"El servicio fue regular, podría mejorar.",2025-05-01,Servicios,6
+834,4,1792.78,485.56,57,53,móvil,5,1834,Excelente atención y variedad de productos.,2025-10-29,Servicios,6
+835,23,9489.67,171.92,55,61,web,11,1835,Entrega rápida y buen empaque.,2025-05-07,Hogar,5
+836,16,7170.93,414.26,3,5,móvil,14,1836,Entrega rápida y buen empaque.,2025-12-06,Servicios,5
+837,18,3877.67,326.7,90,47,web,15,1837,Relación calidad-precio aceptable.,2025-12-17,Servicios,3
+838,28,4451.91,23.78,51,33,web,5,1838,No estoy satisfecho con la compra.,2025-02-16,Ropa,6
+839,28,8907.95,459.63,81,41,web,15,1839,No estoy satisfecho con la compra.,2025-11-26,Retail,6
+840,28,846.94,394.14,63,61,móvil,12,1840,Relación calidad-precio aceptable.,2025-07-31,Electrónica,3
+841,27,1645.42,145.27,9,46,móvil,7,1841,"El servicio fue regular, podría mejorar.",2025-11-05,Hogar,6
+842,15,6967.34,385.75,83,24,tienda_fisica,11,1842,Entrega rápida y buen empaque.,2025-08-16,Ropa,5
+843,13,2040.75,166.66,74,11,tienda_fisica,2,1843,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-22,Servicios,9
+844,28,5960.46,216.95,41,58,web,8,1844,Excelente atención y variedad de productos.,2025-03-10,Ropa,6
+845,26,2853.88,60.51,48,24,móvil,7,1845,Entrega rápida y buen empaque.,2025-07-13,Servicios,5
+846,1,9234.97,330.61,81,30,tienda_fisica,15,1846,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-15,Servicios,9
+847,23,8525.72,43.9,80,55,móvil,10,1847,Relación calidad-precio aceptable.,2025-05-14,Servicios,3
+848,6,9475.07,76.33,92,68,web,7,1848,Entrega rápida y buen empaque.,2025-08-21,Electrónica,5
+849,8,7149.96,111.46,111,35,tienda_fisica,5,1849,"El servicio fue regular, podría mejorar.",2025-09-11,Hogar,6
+850,28,2105.73,123.47,106,37,móvil,12,1850,El producto llegó defectuoso.,2025-12-13,Servicios,4
+851,14,7935.01,33.81,34,31,web,10,1851,Excelente atención y variedad de productos.,2025-08-19,Hogar,6
+852,3,152.69,83.94,42,51,web,11,1852,"Muy recomendable, volvería a comprar.",2025-04-19,Retail,5
+853,24,5992.1,55.07,72,8,tienda_fisica,1,1853,El producto llegó defectuoso.,2025-06-20,Hogar,4
+854,20,9396.25,484.26,77,6,web,1,1854,Entrega rápida y buen empaque.,2025-05-10,Hogar,5
+855,10,9776.36,342.21,17,72,tienda_fisica,1,1855,El producto llegó defectuoso.,2025-10-25,Ropa,4
+856,17,4953.76,182.8,60,17,web,2,1856,Excelente atención y variedad de productos.,2025-06-12,Retail,6
+857,5,2641.04,170.37,17,64,tienda_fisica,14,1857,El producto llegó defectuoso.,2025-05-24,Ropa,4
+858,10,9032.79,146.34,107,34,tienda_fisica,9,1858,El producto llegó defectuoso.,2025-06-10,Retail,4
+859,24,9945.92,386.56,20,72,móvil,14,1859,Entrega rápida y buen empaque.,2025-12-03,Servicios,5
+860,7,1528.78,130.33,5,61,tienda_fisica,5,1860,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-25,Hogar,9
+861,4,9952.26,465.06,6,57,tienda_fisica,6,1861,El producto llegó defectuoso.,2025-12-30,Hogar,4
+862,16,1169.28,365.49,19,16,tienda_fisica,6,1862,"Muy recomendable, volvería a comprar.",2025-02-17,Hogar,5
+863,27,1724.54,264.19,35,28,web,10,1863,Excelente atención y variedad de productos.,2025-01-03,Retail,6
+864,14,9208.11,138.16,64,13,tienda_fisica,15,1864,Excelente atención y variedad de productos.,2025-06-18,Ropa,6
+865,13,3766.91,465.99,14,42,web,3,1865,"El servicio fue regular, podría mejorar.",2025-01-15,Retail,6
+866,15,6302.15,149.27,85,1,web,6,1866,"Muy recomendable, volvería a comprar.",2025-01-23,Hogar,5
+867,11,9476.81,499.91,117,17,tienda_fisica,4,1867,"Muy recomendable, volvería a comprar.",2025-01-25,Ropa,5
+868,26,602.57,53.95,78,49,tienda_fisica,2,1868,Entrega rápida y buen empaque.,2025-07-24,Retail,5
+869,25,8661.88,62.81,110,27,móvil,3,1869,No estoy satisfecho con la compra.,2025-07-18,Servicios,6
+870,4,3020.54,404.53,95,40,móvil,15,1870,Excelente atención y variedad de productos.,2025-12-17,Retail,6
+871,22,1006.31,196.38,26,63,tienda_fisica,8,1871,Entrega rápida y buen empaque.,2025-07-18,Servicios,5
+872,3,7577.08,409.28,79,24,móvil,7,1872,El producto llegó defectuoso.,2025-11-19,Retail,4
+873,17,3450.36,242.49,29,20,móvil,15,1873,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-11,Electrónica,9
+874,10,4708.78,58.01,103,62,tienda_fisica,5,1874,"El servicio fue regular, podría mejorar.",2025-03-18,Ropa,6
+875,17,4305.93,292.9,71,10,web,15,1875,No estoy satisfecho con la compra.,2025-01-24,Retail,6
+876,14,990.12,337.21,73,33,tienda_fisica,6,1876,El producto llegó defectuoso.,2025-05-11,Electrónica,4
+877,4,7418.14,242.18,101,24,tienda_fisica,14,1877,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-21,Electrónica,9
+878,29,7058.57,170.69,93,59,web,13,1878,El producto llegó defectuoso.,2025-12-10,Electrónica,4
+879,11,9668.86,438.25,24,28,móvil,3,1879,Relación calidad-precio aceptable.,2025-02-10,Ropa,3
+880,28,6750.42,228.22,3,1,tienda_fisica,7,1880,Relación calidad-precio aceptable.,2025-03-01,Ropa,3
+881,15,6933.47,437.01,96,63,web,5,1881,"Muy recomendable, volvería a comprar.",2025-11-13,Servicios,5
+882,26,3061.43,80.04,2,25,tienda_fisica,2,1882,El producto llegó defectuoso.,2025-01-09,Retail,4
+883,7,4837.12,89.67,31,56,tienda_fisica,14,1883,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-17,Servicios,9
+884,10,7708.73,91.12,55,3,tienda_fisica,2,1884,"El servicio fue regular, podría mejorar.",2025-03-27,Servicios,6
+885,16,245.3,235.77,32,26,web,5,1885,"Muy recomendable, volvería a comprar.",2025-10-19,Hogar,5
+886,1,1071.5,426.86,56,54,móvil,14,1886,Entrega rápida y buen empaque.,2025-09-11,Electrónica,5
+887,2,4900.59,253.33,76,63,tienda_fisica,4,1887,Relación calidad-precio aceptable.,2026-01-01,Ropa,3
+888,14,5785.21,285.56,35,54,web,15,1888,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-31,Ropa,9
+889,15,6990.27,29.99,37,25,web,8,1889,Entrega rápida y buen empaque.,2025-06-26,Hogar,5
+890,19,9095.25,182.79,78,60,móvil,3,1890,No estoy satisfecho con la compra.,2025-05-31,Servicios,6
+891,27,9414.91,333.2,47,61,tienda_fisica,13,1891,El producto llegó defectuoso.,2025-03-24,Hogar,4
+892,23,7505.08,340.19,17,23,tienda_fisica,4,1892,Relación calidad-precio aceptable.,2025-03-22,Servicios,3
+893,26,4189.04,497.01,39,31,tienda_fisica,4,1893,"El servicio fue regular, podría mejorar.",2025-10-13,Hogar,6
+894,29,2645.04,344.93,23,65,web,1,1894,Entrega rápida y buen empaque.,2025-02-02,Electrónica,5
+895,20,2305.57,289.75,63,34,móvil,6,1895,"El servicio fue regular, podría mejorar.",2025-07-01,Hogar,6
+896,29,1554.22,351.27,66,14,web,12,1896,Relación calidad-precio aceptable.,2025-01-26,Ropa,3
+897,4,7827.44,312.63,110,14,móvil,14,1897,"El servicio fue regular, podría mejorar.",2025-10-15,Hogar,6
+898,6,6317.76,438.02,117,47,web,3,1898,"El servicio fue regular, podría mejorar.",2025-05-30,Ropa,6
+899,24,8711.4,94.06,47,43,tienda_fisica,14,1899,"Muy recomendable, volvería a comprar.",2025-03-12,Hogar,5
+900,14,7703.73,23.16,107,61,web,6,1900,"Muy recomendable, volvería a comprar.",2025-05-27,Servicios,5
+901,9,3755.74,382.33,47,32,tienda_fisica,3,1901,"El servicio fue regular, podría mejorar.",2025-09-29,Servicios,6
+902,26,4316.79,460.65,115,59,móvil,14,1902,Excelente atención y variedad de productos.,2025-09-22,Servicios,6
+903,15,1498.56,24.78,104,67,tienda_fisica,2,1903,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-13,Retail,9
+904,25,1685.03,49.5,98,5,móvil,11,1904,El producto llegó defectuoso.,2025-11-25,Retail,4
+905,21,9801.47,403.55,113,67,web,5,1905,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-03,Ropa,9
+906,24,7439.84,456.43,2,36,móvil,15,1906,Relación calidad-precio aceptable.,2025-09-28,Ropa,3
+907,15,6456.6,446.04,80,57,tienda_fisica,12,1907,El producto llegó defectuoso.,2025-06-26,Servicios,4
+908,29,3050.24,37.75,43,50,tienda_fisica,12,1908,No estoy satisfecho con la compra.,2025-03-06,Hogar,6
+909,7,973.55,284.86,67,44,tienda_fisica,13,1909,Relación calidad-precio aceptable.,2025-11-22,Ropa,3
+910,29,7976.16,304.4,31,39,web,12,1910,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-05,Electrónica,9
+911,27,3761.14,320.95,46,16,tienda_fisica,1,1911,"Buen producto, la calidad es excelente y llegó rápido.",2025-11-30,Electrónica,9
+912,19,7381.74,237.51,31,69,web,14,1912,Relación calidad-precio aceptable.,2025-11-01,Hogar,3
+913,10,6685.88,411.24,74,18,web,12,1913,Relación calidad-precio aceptable.,2025-07-13,Retail,3
+914,11,5188.7,112.43,100,47,tienda_fisica,8,1914,"El servicio fue regular, podría mejorar.",2025-02-20,Servicios,6
+915,3,967.87,223.95,17,61,web,4,1915,El producto llegó defectuoso.,2025-08-17,Hogar,4
+916,19,5611.74,393.84,112,34,web,10,1916,El producto llegó defectuoso.,2025-09-13,Retail,4
+917,23,9313.8,254.98,54,21,tienda_fisica,3,1917,"Muy recomendable, volvería a comprar.",2025-09-16,Hogar,5
+918,5,9681.92,266.33,68,16,web,12,1918,"Muy recomendable, volvería a comprar.",2025-04-19,Hogar,5
+919,24,1610.55,288.33,118,16,móvil,10,1919,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-29,Hogar,9
+920,19,2931.43,270.93,16,48,web,5,1920,Entrega rápida y buen empaque.,2025-07-11,Electrónica,5
+921,1,7922.48,88.23,76,54,móvil,1,1921,"Muy recomendable, volvería a comprar.",2025-06-06,Retail,5
+922,27,7409.62,21.0,71,45,móvil,2,1922,Excelente atención y variedad de productos.,2025-01-23,Servicios,6
+923,19,4551.13,182.16,49,61,móvil,14,1923,Relación calidad-precio aceptable.,2025-11-07,Hogar,3
+924,25,4526.8,235.56,111,42,web,2,1924,"Muy recomendable, volvería a comprar.",2025-11-16,Servicios,5
+925,13,2366.58,209.79,70,6,tienda_fisica,11,1925,El producto llegó defectuoso.,2025-08-15,Ropa,4
+926,28,1697.87,31.91,81,40,tienda_fisica,9,1926,"El servicio fue regular, podría mejorar.",2025-11-27,Retail,6
+927,7,9553.92,280.08,97,7,web,10,1927,"El servicio fue regular, podría mejorar.",2025-09-25,Ropa,6
+928,4,6599.63,275.29,3,36,web,13,1928,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-16,Hogar,9
+929,3,8078.86,311.29,52,6,web,8,1929,"Muy recomendable, volvería a comprar.",2025-01-12,Ropa,5
+930,14,289.37,273.39,49,33,móvil,2,1930,Excelente atención y variedad de productos.,2025-02-28,Hogar,6
+931,10,1483.14,142.67,12,20,web,5,1931,Excelente atención y variedad de productos.,2025-07-28,Ropa,6
+932,20,9613.18,107.1,92,8,tienda_fisica,5,1932,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-19,Servicios,9
+933,14,8935.46,143.81,106,16,web,1,1933,Excelente atención y variedad de productos.,2025-04-14,Retail,6
+934,16,5110.78,262.12,15,35,web,1,1934,No estoy satisfecho con la compra.,2025-06-12,Ropa,6
+935,3,4867.51,215.6,30,3,móvil,5,1935,El producto llegó defectuoso.,2025-10-11,Ropa,4
+936,25,5569.34,396.9,39,53,tienda_fisica,8,1936,No estoy satisfecho con la compra.,2025-02-12,Electrónica,6
+937,26,9680.72,199.19,22,32,tienda_fisica,9,1937,No estoy satisfecho con la compra.,2025-08-05,Ropa,6
+938,1,8135.8,481.33,80,38,tienda_fisica,11,1938,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-27,Hogar,9
+939,9,5998.78,422.95,49,45,web,14,1939,"Muy recomendable, volvería a comprar.",2025-11-20,Electrónica,5
+940,2,1656.09,276.36,9,39,web,2,1940,Relación calidad-precio aceptable.,2025-07-22,Ropa,3
+941,24,5586.97,154.14,56,27,tienda_fisica,10,1941,Excelente atención y variedad de productos.,2025-09-16,Electrónica,6
+942,25,7092.15,151.05,85,42,móvil,6,1942,Relación calidad-precio aceptable.,2025-04-18,Retail,3
+943,1,9144.48,84.19,119,1,móvil,10,1943,Entrega rápida y buen empaque.,2025-09-01,Ropa,5
+944,14,5580.12,354.32,63,51,web,9,1944,Excelente atención y variedad de productos.,2025-02-11,Electrónica,6
+945,29,8329.23,342.37,87,16,tienda_fisica,6,1945,"Buen producto, la calidad es excelente y llegó rápido.",2025-07-12,Electrónica,9
+946,6,8399.5,409.7,2,16,tienda_fisica,8,1946,El producto llegó defectuoso.,2025-07-09,Retail,4
+947,8,7444.29,384.04,88,46,web,4,1947,"Buen producto, la calidad es excelente y llegó rápido.",2025-02-16,Hogar,9
+948,8,9802.19,484.3,5,36,tienda_fisica,8,1948,No estoy satisfecho con la compra.,2025-12-27,Retail,6
+949,1,2001.06,414.14,51,15,tienda_fisica,14,1949,No estoy satisfecho con la compra.,2025-05-23,Ropa,6
+950,6,5540.26,336.72,73,23,tienda_fisica,2,1950,"Muy recomendable, volvería a comprar.",2025-10-29,Ropa,5
+951,9,9338.96,430.63,113,67,web,12,1951,Excelente atención y variedad de productos.,2025-05-21,Electrónica,6
+952,22,5623.15,237.88,55,7,web,14,1952,Relación calidad-precio aceptable.,2025-06-15,Electrónica,3
+953,4,6817.73,243.96,47,67,móvil,13,1953,Relación calidad-precio aceptable.,2025-01-23,Hogar,3
+954,9,9188.0,275.56,41,1,tienda_fisica,7,1954,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-10,Servicios,9
+955,24,2295.0,350.98,10,32,móvil,4,1955,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-26,Electrónica,9
+956,21,6271.68,33.38,56,4,móvil,10,1956,"El servicio fue regular, podría mejorar.",2025-11-17,Retail,6
+957,4,4762.09,480.23,107,7,móvil,14,1957,No estoy satisfecho con la compra.,2025-06-20,Retail,6
+958,25,6019.65,230.49,13,58,tienda_fisica,10,1958,"El servicio fue regular, podría mejorar.",2025-03-05,Servicios,6
+959,13,3167.13,426.89,9,17,web,1,1959,"Buen producto, la calidad es excelente y llegó rápido.",2025-08-15,Electrónica,9
+960,3,1063.18,46.78,7,38,web,14,1960,El producto llegó defectuoso.,2025-07-15,Retail,4
+961,8,8652.6,397.99,80,2,móvil,8,1961,El producto llegó defectuoso.,2025-07-16,Electrónica,4
+962,11,6526.67,344.37,4,59,móvil,9,1962,"El servicio fue regular, podría mejorar.",2025-06-18,Hogar,6
+963,4,172.27,362.38,76,25,tienda_fisica,15,1963,"El servicio fue regular, podría mejorar.",2025-10-21,Servicios,6
+964,12,4239.02,367.82,57,24,web,4,1964,Relación calidad-precio aceptable.,2025-03-12,Ropa,3
+965,10,5866.0,266.3,84,46,web,5,1965,Excelente atención y variedad de productos.,2025-10-26,Electrónica,6
+966,16,3121.31,184.59,48,2,tienda_fisica,9,1966,Excelente atención y variedad de productos.,2025-10-28,Servicios,6
+967,8,5095.72,420.88,110,7,tienda_fisica,7,1967,"Buen producto, la calidad es excelente y llegó rápido.",2025-06-26,Servicios,9
+968,26,730.62,110.89,61,60,web,10,1968,No estoy satisfecho con la compra.,2025-12-21,Servicios,6
+969,20,3031.33,177.74,14,59,móvil,15,1969,Entrega rápida y buen empaque.,2025-01-22,Ropa,5
+970,21,2269.1,130.53,80,28,móvil,4,1970,"Buen producto, la calidad es excelente y llegó rápido.",2025-09-04,Servicios,9
+971,7,4033.11,416.52,1,47,tienda_fisica,1,1971,El producto llegó defectuoso.,2025-02-07,Retail,4
+972,5,2941.23,113.31,75,47,móvil,1,1972,"El servicio fue regular, podría mejorar.",2025-01-16,Electrónica,6
+973,6,2228.5,145.76,23,44,web,14,1973,Relación calidad-precio aceptable.,2025-10-11,Servicios,3
+974,1,1801.97,145.66,13,3,web,14,1974,No estoy satisfecho con la compra.,2025-12-13,Servicios,6
+975,11,9364.34,166.43,31,48,web,13,1975,"El servicio fue regular, podría mejorar.",2025-07-10,Hogar,6
+976,29,7123.87,76.88,113,17,tienda_fisica,13,1976,El producto llegó defectuoso.,2025-04-08,Servicios,4
+977,23,3773.84,307.78,82,32,web,15,1977,El producto llegó defectuoso.,2025-01-24,Ropa,4
+978,28,5377.91,399.0,42,32,tienda_fisica,1,1978,No estoy satisfecho con la compra.,2025-11-19,Ropa,6
+979,7,7286.62,396.64,102,9,móvil,3,1979,"Muy recomendable, volvería a comprar.",2025-09-18,Servicios,5
+980,16,5212.98,105.92,92,48,móvil,9,1980,Entrega rápida y buen empaque.,2025-12-22,Ropa,5
+981,9,5832.81,326.29,102,5,móvil,4,1981,"Muy recomendable, volvería a comprar.",2025-04-23,Hogar,5
+982,13,2225.01,224.01,49,21,web,15,1982,No estoy satisfecho con la compra.,2025-07-11,Hogar,6
+983,5,7528.65,161.62,67,46,móvil,4,1983,"El servicio fue regular, podría mejorar.",2025-10-26,Ropa,6
+984,14,4538.95,227.6,48,64,web,6,1984,Entrega rápida y buen empaque.,2025-05-20,Hogar,5
+985,15,2376.21,329.77,46,11,móvil,5,1985,Excelente atención y variedad de productos.,2025-09-14,Electrónica,6
+986,26,2800.43,129.32,16,10,tienda_fisica,6,1986,"El servicio fue regular, podría mejorar.",2025-01-20,Ropa,6
+987,7,6767.32,140.01,96,36,tienda_fisica,4,1987,Entrega rápida y buen empaque.,2025-12-28,Servicios,5
+988,1,7712.26,155.29,45,52,tienda_fisica,7,1988,Relación calidad-precio aceptable.,2025-10-24,Servicios,3
+989,21,5150.84,385.36,20,51,tienda_fisica,4,1989,"Muy recomendable, volvería a comprar.",2025-04-27,Electrónica,5
+990,8,5182.46,397.27,97,60,tienda_fisica,12,1990,"Muy recomendable, volvería a comprar.",2025-08-25,Servicios,5
+991,28,1919.07,389.66,90,54,móvil,4,1991,Entrega rápida y buen empaque.,2025-08-13,Electrónica,5
+992,12,1432.55,439.4,40,2,móvil,8,1992,"Buen producto, la calidad es excelente y llegó rápido.",2025-12-04,Ropa,9
+993,14,4285.91,381.26,98,69,móvil,5,1993,No estoy satisfecho con la compra.,2025-06-16,Retail,6
+994,30,1434.39,489.08,43,51,tienda_fisica,7,1994,"Buen producto, la calidad es excelente y llegó rápido.",2025-04-15,Electrónica,9
+995,7,4774.04,177.84,58,39,móvil,2,1995,El producto llegó defectuoso.,2025-03-29,Electrónica,4
+996,2,8273.42,309.61,4,24,web,4,1996,Excelente atención y variedad de productos.,2025-02-05,Ropa,6
+997,8,2946.5,271.71,59,8,móvil,6,1997,No estoy satisfecho con la compra.,2025-09-23,Retail,6
+998,28,9102.63,207.73,15,17,web,9,1998,Entrega rápida y buen empaque.,2025-08-03,Servicios,5
+999,29,8663.71,82.37,27,40,móvil,7,1999,El producto llegó defectuoso.,2025-12-30,Electrónica,4
+1000,20,5772.16,168.95,26,65,tienda_fisica,12,2000,Excelente atención y variedad de productos.,2025-12-17,Hogar,6

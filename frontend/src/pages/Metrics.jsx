@@ -28,10 +28,10 @@ export default function Metrics() {
   };
 
   const metricsData = [
-    { label: 'Exactitud (Accuracy)', value: metrics?.accuracy, color: '#3498db', icon: '🎯' },
-    { label: 'Precisión (Precision)', value: metrics?.precision, color: '#e74c3c', icon: '🔍' },
-    { label: 'Recall', value: metrics?.recall, color: '#f39c12', icon: '📈' },
-    { label: 'F1-Score', value: metrics?.f1_score, color: '#27ae60', icon: '⚡' },
+    { label: 'Inercia (Inertia)', value: metrics?.inertia, color: '#3498db', icon: '🌀' },
+    { label: 'Silhouette', value: metrics?.silhouette, color: '#e67e22', icon: '📏' },
+    { label: 'Calinski-Harabasz', value: metrics?.calinski_harabasz, color: '#9b59b6', icon: '📊' },
+    { label: 'Davies-Bouldin', value: metrics?.davies_bouldin, color: '#e74c3c', icon: '📉' },
   ];
 
   // Función auxiliar para saber si un valor es válido (no null ni undefined)
@@ -39,7 +39,7 @@ export default function Metrics() {
 
   return (
     <div style={styles.container}>
-      <h1>📊 Evaluación del Modelo</h1>
+      <h1>Evaluación de Rendimiento</h1>
       
       {/* Mensaje informativo si no hay modelo entrenado aún */}
       {!metrics && (
@@ -56,24 +56,22 @@ export default function Metrics() {
               <h3 style={styles.metricLabel}>{metric.label}</h3>
               <p style={{ ...styles.metricValue, color: metric.color }}>
                 {/* AQUI ESTÁ EL CAMBIO: Si hay valor, muestra número. Si no, guion */}
-                {isValid(metric.value) ? Number(metric.value).toFixed(2) + '%' : '-'}
+                {isValid(metric.value) ? Number(metric.value).toFixed(2) : '-'}
               </p>
             </div>
           </Card>
         ))}
       </div>
 
-      {/* Solo mostramos el estado de predicción si hay métricas reales */}
+      {/* Solo mostramos el estado de validación si hay métricas reales */}
       {metrics && (
-        <Card title="Estado de Predicción">
-          {checkMetrics(metrics) ? (
-            <p style={styles.success}>✅ El modelo cumple con las métricas deseadas. Predicción habilitada.</p>
-          ) : (
-            <p style={styles.warning}>⚠️ El modelo no cumple con las métricas mínimas. Considera ajustar hiperparámetros.</p>
-          )}
-          <p style={styles.info}>
-            <strong>Requisitos mínimos:</strong> Accuracy &gt; 75%, Precision &gt; 70%, Recall &gt; 70%, F1-Score &gt; 70%
-          </p>
+        <Card title="Validación del Modelo de Clustering">
+          <ul style={{ marginBottom: '1rem', marginTop: 0 }}>
+            <li><strong>Inercia:</strong> Que el valor sea lo mas bajo posible (clusters más compactos).</li>
+            <li><strong>Silhouette:</strong> Que el resultado sea lo mas cercano a 1 (Bueno: mayor que 0.5) (Aceptable: 0.25 - 0.5)</li>
+            <li><strong>Calinski-Harabasz:</strong> Que el valor sea lo mas alto posible (buena separación entre clusters).</li>
+            <li><strong>Davies-Bouldin:</strong> Que el valor sea lo mas bajo posible (Bueno: menor que 1) (Aceptable: 1 - 2).</li>
+          </ul>
         </Card>
       )}
     </div>

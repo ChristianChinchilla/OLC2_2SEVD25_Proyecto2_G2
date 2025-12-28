@@ -1,0 +1,21 @@
+cliente_id,frecuencia_compra,monto_total_gastado,monto_promedio_compra,dias_desde_ultima_compra,antiguedad_cliente_meses,canal_principal,numero_productos_distintos,reseña_id,texto_reseña,fecha_reseña,producto_categoria,longitud_reseña
+1,1,5958.25,135.71,18,48,web,11,101,"El servicio fue regular, podría mejorar.",2025-05-20,Electrónica,6
+2,2,335.4,126.52,65,39,web,9,102,El producto llegó defectuoso.,2025-02-20,Ropa,4
+3,8,3648.75,147.37,1,49,web,12,103,El producto llegó defectuoso.,2025-04-19,Retail,4
+4,5,1800.98,317.22,14,6,móvil,2,104,Relación calidad-precio aceptable.,2025-04-02,Retail,3
+5,2,5864.88,237.68,49,6,tienda_fisica,5,105,Relación calidad-precio aceptable.,2025-06-10,Ropa,3
+6,19,1619.08,74.34,85,15,móvil,2,106,Entrega rápida y buen empaque.,2025-03-01,Electrónica,5
+7,9,3681.94,341.94,21,24,móvil,4,107,El producto llegó defectuoso.,2025-06-21,Retail,4
+8,20,5116.33,236.95,32,11,móvil,7,108,"El servicio fue regular, podría mejorar.",2025-03-11,Ropa,6
+9,22,2661.83,318.91,8,15,web,6,109,No estoy satisfecho con la compra.,2025-04-13,Retail,6
+10,7,7313.78,248.51,41,14,tienda_fisica,8,110,"El servicio fue regular, podría mejorar.",2025-04-12,Hogar,6
+11,9,1203.08,310.75,69,17,tienda_fisica,10,111,Excelente atención y variedad de productos.,2025-04-20,Ropa,6
+12,12,1832.63,399.14,66,32,web,1,112,El producto llegó defectuoso.,2025-01-29,Servicios,4
+13,22,3435.06,72.23,49,39,móvil,9,113,Excelente atención y variedad de productos.,2025-03-06,Ropa,6
+14,22,5793.7,288.6,69,49,móvil,11,114,"Buen producto, la calidad es excelente y llegó rápido.",2025-03-29,Electrónica,9
+15,14,1349.45,51.14,34,33,web,9,115,Relación calidad-precio aceptable.,2025-01-28,Retail,3
+16,5,3053.92,106.54,68,59,web,10,116,No estoy satisfecho con la compra.,2025-03-24,Hogar,6
+17,4,7439.88,357.55,40,16,web,4,117,"Buen producto, la calidad es excelente y llegó rápido.",2025-05-26,Electrónica,9
+18,24,3939.32,74.22,69,50,web,3,118,"El servicio fue regular, podría mejorar.",2025-06-18,Hogar,6
+19,9,4268.62,262.31,28,60,tienda_fisica,12,119,Excelente atención y variedad de productos.,2025-06-26,Servicios,6
+20,13,7961.68,277.46,57,58,tienda_fisica,8,120,Relación calidad-precio aceptable.,2025-01-31,Servicios,3

@@ -7,7 +7,7 @@ export const API_ENDPOINTS = {
   CLEAN_DATA: '/clean-data',
   TRAIN_MODEL: '/train-model',
   GET_METRICS: '/metrics',
-  PREDICT: '/predict',
+  PREDICT: '/pre-report',
 };
 
 export const getApiUrl = (endpoint) => `${API_BASE_URL}${endpoint}`;
