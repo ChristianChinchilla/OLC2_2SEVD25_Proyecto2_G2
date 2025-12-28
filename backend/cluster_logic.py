@@ -173,46 +173,93 @@ class InsightClusterModel:
     # ================== GRAFICAS ==================
     def plot_clientes_por_segmento(self):
         counts = self.raw_dataset['Cluster'].value_counts().sort_index()
-        counts.plot(kind='bar', title='Distribución de Clientes por Segmento')
-        plt.xlabel("Segmento")
-        plt.ylabel("Clientes")
+
+        plt.figure(figsize=(6, 6))
+        plt.pie(
+            counts,
+            labels=[f"Cluster {i}" for i in counts.index],
+            autopct='%1.1f%%',
+            startangle=90
+        )
+        plt.title("Distribución de Clientes por Segmento")
         plt.tight_layout()
         plt.savefig(f"{PLOTS_DIR}/clientes_por_segmento.png")
         plt.close()
 
     def plot_gasto_promedio_por_segmento(self):
-        self.raw_dataset.groupby('Cluster')['monto_total_gastado'].mean().plot(
-            kind='bar',
-            title='Promedio de Gasto por Segmento'
-        )
-        plt.xlabel("Segmento")
-        plt.ylabel("Gasto Promedio")
+        data = self.raw_dataset.groupby('Cluster')['monto_total_gastado'].mean()
+        
+        labels = data.index.astype(str)
+        values = data.values.tolist()
+        values += values[:1]
+
+        angles = np.linspace(0, 2*np.pi, len(labels)+1)
+
+        plt.figure(figsize=(6,6))
+        ax = plt.subplot(111, polar=True)
+        ax.plot(angles, values, linewidth=2)
+        ax.fill(angles, values, alpha=0.25)
+
+        ax.set_thetagrids(angles[:-1] * 180/np.pi, labels)
+        ax.set_title("Perfil de Gasto por Segmento")
+
         plt.tight_layout()
         plt.savefig(f"{PLOTS_DIR}/gasto_promedio_por_segmento.png")
         plt.close()
 
+
     def plot_frecuencia_promedio_por_segmento(self):
-        self.raw_dataset.groupby('Cluster')['frecuencia_compra'].mean().plot(
-            kind='bar',
-            title='Frecuencia Promedio de Compra'
-        )
-        plt.xlabel("Segmento")
-        plt.ylabel("Frecuencia")
+        plt.figure(figsize=(7,5))
+
+        # --- Scatter por cluster ---
+        for c in self.raw_dataset['Cluster'].unique():
+            subset = self.raw_dataset[self.raw_dataset['Cluster'] == c]
+            plt.scatter(
+                subset['frecuencia_compra'],
+                subset['monto_total_gastado'],
+                label=f"Cluster {c}",
+                alpha=0.6
+            )
+
+        # --- Línea polinomial global (grado 2) ---
+        x = self.raw_dataset['frecuencia_compra']
+        y = self.raw_dataset['monto_total_gastado']
+        # Elimina NaN para el ajuste
+        mask = (~x.isna()) & (~y.isna())
+        x_clean = x[mask]
+        y_clean = y[mask]
+        if len(x_clean) > 2:
+            coeffs = np.polyfit(x_clean, y_clean, deg=2)
+            x_fit = np.linspace(x_clean.min(), x_clean.max(), 200)
+            y_fit = np.polyval(coeffs, x_fit)
+            plt.plot(x_fit, y_fit, color='black', linewidth=2, linestyle='--', label='Ajuste Polinomial (grado 2)')
+
+        plt.xlabel("Frecuencia de Compra")
+        plt.ylabel("Monto Total Gastado")
+        plt.title("Frecuencia vs Gasto por Segmento")
+        plt.legend()
         plt.tight_layout()
-        plt.savefig(f"{PLOTS_DIR}/frecuencia_promedio_por_segmento.png")
+        plt.savefig(f"{PLOTS_DIR}/frecuencia_vs_gasto.png")
         plt.close()
 
+# Dentro de cada cluster, ¿qué porcentaje de clientes usa cada canal?
     def plot_canales_por_segmento(self):
-        pd.crosstab(
+        data = pd.crosstab(
             self.raw_dataset['Cluster'],
-            self.raw_dataset['canal_principal']
-        ).plot(
-            kind='bar',
-            stacked=True,
-            title='Distribución de Canal por Segmento'
+            self.raw_dataset['canal_principal'],
+            normalize='index'
         )
-        plt.xlabel("Segmento")
-        plt.ylabel("Clientes")
+
+        data.plot(
+            kind='barh',
+            stacked=True,
+            figsize=(8,5)
+        )
+
+        plt.xlabel("Proporción de clientes")
+        plt.ylabel("Cluster")
+        plt.title("Canal Principal por Segmento (Distribución Proporcional)")
+        plt.legend(title="Canal", bbox_to_anchor=(1.05, 1), loc='upper left')
         plt.tight_layout()
         plt.savefig(f"{PLOTS_DIR}/canales_por_segmento.png")
         plt.close()

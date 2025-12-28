@@ -9,25 +9,6 @@ export default function PreReporte() {
   const [error, setError] = useState(null);
   const [segments, setSegments] = useState([]);
 
-  // useEffect(() => {
-  //   if (modelId) {
-  //     fetchSegments();
-  //   }
-  // }, [modelId]);
-
-  // const fetchSegments = async () => {
-  //   setLoading(true);
-  //   setError(null);
-  //   try {
-  //     const data = await apiService.getSegmentsReport();
-  //     setSegments(data);
-  //   } catch (err) {
-  //     setError('No se pudo obtener el reporte de segmentos.');
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   return (
     <div style={styles.container}>
       <h1>Visualización Preeliminar para los Reportes</h1>
@@ -102,7 +83,7 @@ export default function PreReporte() {
               onError={e => { e.target.style.display = 'none'; e.target.parentNode.append("No disponible"); }} />
             </Card>
             <Card title="Frecuencia Promedio de Compra">
-              <img src={`http://localhost:8000/reports/frecuencia_promedio_por_segmento.png?${Date.now()}`} style={styles.img} alt="Frecuencia Promedio de Compra"
+              <img src={`http://localhost:8000/reports/frecuencia_vs_gasto.png?${Date.now()}`} style={styles.img} alt="Frecuencia Promedio de Compra"
               onError={e => { e.target.style.display = 'none'; e.target.parentNode.append("No disponible"); }} />
             </Card>
             <Card title="Canal Principal por Segmento">
