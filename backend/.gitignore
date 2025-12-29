@@ -4,3 +4,4 @@
 
 # Ignorar entorno virtual de Python
 /venv/
+reports/
