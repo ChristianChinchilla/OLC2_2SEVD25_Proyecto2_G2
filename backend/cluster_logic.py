@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
-from sklearn.preprocessing import OneHotEncoder, RobustScaler
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -19,6 +21,7 @@ os.makedirs(PLOTS_DIR, exist_ok=True)
 
 class InsightClusterModel:
     def __init__(self):
+        self.model_trained = False  # Bandera de estado
         self.model = None
         self.raw_dataset = None  
         self.processed_data = None 
@@ -77,15 +80,39 @@ class InsightClusterModel:
             }
 
     # ================== PREPROCESADO ==================
+    def handle_outliers(self, df):
+        """Aplica Capping (Winsorization) a las columnas numéricas."""
+        df_clean = df.copy()
+        cols_to_process = [c for c in self.cols_numeric if c in df_clean.columns]
+        
+        for col in cols_to_process:
+            # Convertir a numérico forzoso por si acaso
+            df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
+            
+            # Calcular límites IQR (5% - 95% para ser conservador)
+            Q1 = df_clean[col].quantile(0.05)
+            Q3 = df_clean[col].quantile(0.95)
+            IQR = Q3 - Q1
+            
+            lower_bound = Q1 - 1.5 * IQR
+            upper_bound = Q3 + 1.5 * IQR
+            
+            # Capping
+            df_clean[col] = np.where(df_clean[col] > upper_bound, upper_bound, df_clean[col])
+            df_clean[col] = np.where(df_clean[col] < lower_bound, lower_bound, df_clean[col])
+            
+        return df_clean
+
     def preprocess_data(self):
         if self.raw_dataset is None:
             raise ValueError("No hay datos cargados.")
 
-        df = self.raw_dataset.copy()
+        # 1. Limpieza de Outliers antes de escalar
+        df = self.handle_outliers(self.raw_dataset)
 
         numeric_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='median')),
-            ('scaler', RobustScaler())
+            ('scaler', StandardScaler())
         ])
 
         categorical_transformer = Pipeline(steps=[
@@ -115,13 +142,15 @@ class InsightClusterModel:
         kmeans = KMeans(
             n_clusters=n_clusters,
             max_iter=max_iter,
+            init='k-means++',
             random_state=42,
-            n_init=20
+            n_init=10
         )
 
         self.labels = kmeans.fit_predict(X)
         self.model = kmeans
         self.raw_dataset['Cluster'] = self.labels
+        self.model_trained = True  # Bandera activada
 
         # ================== METRICAS ==================
         inertia = kmeans.inertia_
@@ -150,6 +179,8 @@ class InsightClusterModel:
             return []
 
         summary = []
+        insights = self.generate_insights()
+
         for i in range(self.model.n_clusters):
             c = self.raw_dataset[self.raw_dataset['Cluster'] == i]
 
@@ -165,7 +196,8 @@ class InsightClusterModel:
                 "ejemplo_reseña": (
                     c['texto_reseña'].iloc[0]
                     if not c.empty else ""
-                )
+                ),
+                "insight": insights.get(i, "Sin datos suficientes")
             })
 
         return summary
@@ -263,6 +295,60 @@ class InsightClusterModel:
         plt.tight_layout()
         plt.savefig(f"{PLOTS_DIR}/canales_por_segmento.png")
         plt.close()
+
+    def generate_insights(self):
+        """Genera insights comparando cada cluster con el promedio global."""
+        if self.raw_dataset is None or 'Cluster' not in self.raw_dataset.columns:
+            return {}
+
+        insights = {}
+        df = self.raw_dataset
+        
+        try:
+            # Promedios globales
+            global_means = df[self.cols_numeric].mean()
+            
+            # Promedios por cluster
+            cluster_means = df.groupby('Cluster')[self.cols_numeric].mean()
+        except KeyError:
+             return {i: "Datos insuficientes para insights" for i in range(self.model.n_clusters)}
+
+        for i in range(self.model.n_clusters):
+            insight_parts = []
+            c_means = cluster_means.loc[i]
+            
+            # Comparar Gasto
+            if c_means['monto_total_gastado'] > global_means['monto_total_gastado'] * 1.1:
+                insight_parts.append("Gastadores Altos.")
+            elif c_means['monto_total_gastado'] < global_means['monto_total_gastado'] * 0.9:
+                insight_parts.append("Gastadores Bajos.")
+                
+            # Comparar Frecuencia
+            if c_means['frecuencia_compra'] > global_means['frecuencia_compra'] * 1.1:
+                insight_parts.append("Muy Frecuentes.")
+            elif c_means['frecuencia_compra'] < global_means['frecuencia_compra'] * 0.9:
+                insight_parts.append("Poco Frecuentes.")
+
+            # Canal
+            c_data = df[df['Cluster'] == i]
+            if not c_data.empty:
+                top_canal = c_data['canal_principal'].mode()[0]
+                insight_parts.append(f"Canal: {top_canal}.")
+
+            if not insight_parts:
+                insight_parts.append("Comportamiento Promedio.")
+                
+            insights[i] = " ".join(insight_parts)
+            
+        return insights
+
+    def get_csv_export(self):
+        """Retorna el dataset con los clusters asignados en formato CSV."""
+        if self.raw_dataset is None:
+            raise ValueError("No hay datos cargados.")
+        if not self.model_trained:
+            raise ValueError("El modelo no ha sido entrenado. No se pueden exportar resultados.")
+        return self.raw_dataset.to_csv(index=False)
 
 
 cluster_engine = InsightClusterModel()

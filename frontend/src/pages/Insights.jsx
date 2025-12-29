@@ -1,12 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import clusterData from '../data/clusterData.json';
+import { getApiUrl } from '../config';
 import SimpleBarChart from '../components/SimpleBarChart';
 
 export default function Insights() {
   const [clusters, setClusters] = useState([]);
 
   useEffect(() => {
-    setClusters(clusterData.clusters);
+    fetch(getApiUrl('/segments-report'))
+      .then(res => {
+        if (!res.ok) return [];
+        return res.json();
+      })
+      .then(data => {
+        if (Array.isArray(data)) {
+          const mapped = data.map(c => ({
+            nombre: `Cluster ${c.cluster_id}`,
+            cantidad_clientes: c.cantidad_clientes
+          }));
+          setClusters(mapped);
+        }
+      })
+      .catch(err => console.error(err));
   }, []);
 
   return (

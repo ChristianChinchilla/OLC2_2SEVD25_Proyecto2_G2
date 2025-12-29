@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import clusterData from '../data/clusterData.json';
+import { getApiUrl } from '../config';
 // Debes instalar jsPDF y jspdf-autotable: npm install jspdf jspdf-autotable
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
@@ -8,29 +8,40 @@ export default function ExportReports() {
   const [clientes, setClientes] = useState([]);
   const [resumen, setResumen] = useState([]);
   const [generating, setGenerating] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Preparar datos de clientes
-    const clientesProcesados = clusterData.clientes_segmentados.map(cliente => {
-      const cluster = clusterData.clusters.find(c => c.cluster_id === cliente.cluster_id);
-      return {
-        ID_Cliente: cliente.cliente_id,
-        Nombre: cliente.nombre,
-        ID_Cluster: cliente.cluster_id,
-        Nombre_Cluster: cluster ? cluster.nombre : 'Desconocido'
-      };
-    });
-    setClientes(clientesProcesados);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(getApiUrl('/segments-report'));
+        if (!response.ok) {
+            throw new Error("No se pudo obtener el reporte. Asegúrate de haber entrenado el modelo.");
+        }
+        const data = await response.json();
+        
+        // Mapear datos del backend al formato de la tabla
+        const resumenProcesado = data.map(c => ({
+          ID_Cluster: c.cluster_id,
+          Nombre: `Cluster ${c.cluster_id}`, // El backend no da nombres "fancy" aún
+          Clientes: c.cantidad_clientes,
+          Gasto_Promedio: c.promedio_gasto,
+          Satisfaccion: c.insight // Usaremos el insight como "Satisfacción/Descripción"
+        }));
+        setResumen(resumenProcesado);
+        
+        // Nota: El endpoint actual solo devuelve resumen, no lista de clientes individual.
+        // Para este ejemplo, dejaremos clientes vacío o podríamos implementar otro endpoint.
+        setClientes([]); 
 
-    // Preparar datos de resumen
-    const resumenProcesado = clusterData.clusters.map(c => ({
-      ID_Cluster: c.cluster_id,
-      Nombre: c.nombre,
-      Clientes: c.cantidad_clientes,
-      Gasto_Promedio: c.metricas_promedio.gasto_promedio,
-      Satisfaccion: c.metricas_promedio.satisfaccion
-    }));
-    setResumen(resumenProcesado);
+      } catch (err) {
+        console.error(err);
+        setError(err.message);
+        // Fallback a datos vacíos para no romper la UI
+        setResumen([]);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const downloadCSV = (data, filename) => {
@@ -172,6 +183,13 @@ export default function ExportReports() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Exportación de Reportes</h1>
+      
+      {error && (
+        <div style={{ padding: '1rem', backgroundColor: '#fee2e2', color: '#dc2626', borderRadius: '0.5rem', marginBottom: '1rem' }}>
+          {error}
+        </div>
+      )}
+
       <div style={styles.grid}>
         {/* Recuadro 1: Clientes Segmentados */}
         <div style={styles.exportCard}>

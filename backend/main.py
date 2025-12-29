@@ -94,14 +94,19 @@ def train_model(config: TrainConfig):
 # reporte de segmentos
 @app.get("/segments-report")
 def get_segments():
+    if not cluster_engine.model_trained:
+        raise HTTPException(status_code=400, detail="Modelo no entrenado")
     try:
         return cluster_engine.get_cluster_summary()
-    except Exception:
-        raise HTTPException(status_code=400, detail="Modelo no entrenado")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 # exportar datos
 @app.get("/export-data")
 def export_data():
+    if not cluster_engine.model_trained:
+        raise HTTPException(status_code=400, detail="Debe entrenar el modelo antes de exportar resultados")
+
     csv_content = cluster_engine.get_csv_export()
     if csv_content is None:
         raise HTTPException(status_code=404, detail="No hay datos para exportar")
